@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soumo/ros2_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /home/soumo/robot_programming/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soumo/ros2_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /home/soumo/robot_programming/build/detection_interfaces
 
 # Utility rule file for detection_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/detection_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/detection_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/detection_interfaces_uninstall:
-	/usr/bin/cmake -P /home/soumo/ros2_ws/build/detection_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/soumo/robot_programming/build/detection_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 detection_interfaces_uninstall: CMakeFiles/detection_interfaces_uninstall
 detection_interfaces_uninstall: CMakeFiles/detection_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/detection_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces_uninstall.dir/clean
 
 CMakeFiles/detection_interfaces_uninstall.dir/depend:
-	cd /home/soumo/ros2_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/CMakeFiles/detection_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/soumo/robot_programming/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/CMakeFiles/detection_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces_uninstall.dir/depend
 

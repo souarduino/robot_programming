@@ -1,1 +1,1 @@
-/home/soumo/ros2_ws/src/detection_interfaces/msg/InferenceResultArray.msg
+/home/soumo/robot_programming/src/detection_interfaces/msg/InferenceResultArray.msg

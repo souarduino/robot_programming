@@ -1,11 +1,11 @@
 {
   "package_name": "detection_interfaces",
-  "output_dir": "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_generator_c/detection_interfaces",
+  "output_dir": "/home/soumo/robot_programming/build/detection_interfaces/rosidl_generator_c/detection_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResult.idl",
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResultArray.idl",
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/PotholeCordinate.idl"
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResult.idl",
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResultArray.idl",
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/PotholeCordinate.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -21,8 +21,8 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/InferenceResult.idl",
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/InferenceResultArray.idl",
-    "/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/PotholeCordinate.idl"
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/InferenceResult.idl",
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/InferenceResultArray.idl",
+    "/home/soumo/robot_programming/build/detection_interfaces/rosidl_adapter/detection_interfaces/msg/PotholeCordinate.idl"
   ]
 }

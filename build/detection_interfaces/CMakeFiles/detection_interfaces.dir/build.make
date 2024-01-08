@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soumo/ros2_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /home/soumo/robot_programming/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soumo/ros2_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /home/soumo/robot_programming/build/detection_interfaces
 
 # Utility rule file for detection_interfaces.
 
@@ -66,9 +66,9 @@ include CMakeFiles/detection_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/detection_interfaces.dir/progress.make
 
-CMakeFiles/detection_interfaces: /home/soumo/ros2_ws/src/detection_interfaces/msg/InferenceResult.msg
-CMakeFiles/detection_interfaces: /home/soumo/ros2_ws/src/detection_interfaces/msg/InferenceResultArray.msg
-CMakeFiles/detection_interfaces: /home/soumo/ros2_ws/src/detection_interfaces/msg/PotholeCordinate.msg
+CMakeFiles/detection_interfaces: /home/soumo/robot_programming/src/detection_interfaces/msg/InferenceResult.msg
+CMakeFiles/detection_interfaces: /home/soumo/robot_programming/src/detection_interfaces/msg/InferenceResultArray.msg
+CMakeFiles/detection_interfaces: /home/soumo/robot_programming/src/detection_interfaces/msg/PotholeCordinate.msg
 
 detection_interfaces: CMakeFiles/detection_interfaces
 detection_interfaces: CMakeFiles/detection_interfaces.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/detection_interfaces.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces.dir/clean
 
 CMakeFiles/detection_interfaces.dir/depend:
-	cd /home/soumo/ros2_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/CMakeFiles/detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/soumo/robot_programming/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/CMakeFiles/detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces.dir/depend
 

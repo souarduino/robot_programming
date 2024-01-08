@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soumo/ros2_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /home/soumo/robot_programming/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soumo/ros2_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /home/soumo/robot_programming/build/detection_interfaces
 
 # Utility rule file for detection_interfaces__py.
 
@@ -93,8 +93,8 @@ rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_types
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/detection_interfaces/msg/InferenceResult.idl
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/detection_interfaces/msg/InferenceResultArray.idl
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/detection_interfaces/msg/PotholeCordinate.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/soumo/ros2_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/soumo/ros2_ws/build/detection_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/soumo/robot_programming/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/soumo/robot_programming/build/detection_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c
@@ -142,10 +142,10 @@ detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/build: detectio
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/build
 
 detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/clean:
-	cd /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/detection_interfaces__py.dir/cmake_clean.cmake
+	cd /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/detection_interfaces__py.dir/cmake_clean.cmake
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/clean
 
 detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/depend:
-	cd /home/soumo/ros2_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/soumo/robot_programming/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/depend
 

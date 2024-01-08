@@ -1,0 +1,418 @@
+[0.000000] (-) TimerEvent: {}
+[0.000553] (detection_interfaces) JobQueued: {'identifier': 'detection_interfaces', 'dependencies': OrderedDict()}
+[0.000919] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.000996] (pothole_detection) JobQueued: {'identifier': 'pothole_detection', 'dependencies': OrderedDict()}
+[0.001069] (detection_interfaces) JobStarted: {'identifier': 'detection_interfaces'}
+[0.107286] (-) TimerEvent: {}
+[0.112831] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.208109] (-) TimerEvent: {}
+[0.218101] (pothole_detection) JobStarted: {'identifier': 'pothole_detection'}
+[0.308415] (-) TimerEvent: {}
+[0.325344] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'cmake'}
+[0.325698] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/soumo/robot_programming/src/detection_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/soumo/robot_programming/install/detection_interfaces'], 'cwd': '/home/soumo/robot_programming/build/detection_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'soumo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/soumo/limo_ros2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/soumo'), ('OLDPWD', '/home/soumo/robot_programming/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1526'), ('SYSTEMD_EXEC_PID', '1745'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3275'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/soumo/limo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'soumo'), ('JOURNAL_STREAM', '8:32160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'soumo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/soumo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/soumo-HP-ENVY-x360-Convertible-15-bq2xx:@/tmp/.ICE-unix/1689,unix/soumo-HP-ENVY-x360-Convertible-15-bq2xx:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '323b05388679482c87d85130a9a1f34f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.82K4G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c77e49ad-45ae-41dd-8785-b35ccc39f3f2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/soumo/robot_programming/build/detection_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/soumo/limo_ros2/build/voice_control:/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages:/home/soumo/limo_ros2/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble')]), 'shell': False}
+[0.408615] (-) TimerEvent: {}
+[0.509097] (-) TimerEvent: {}
+[0.609564] (-) TimerEvent: {}
+[0.710112] (-) TimerEvent: {}
+[0.791861] (detection_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.810332] (-) TimerEvent: {}
+[0.860026] (detection_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.892016] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.910488] (-) TimerEvent: {}
+[1.010999] (-) TimerEvent: {}
+[1.046604] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.068210] (detection_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.073658] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.075336] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.086647] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.111184] (-) TimerEvent: {}
+[1.212785] (-) TimerEvent: {}
+[1.293436] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.303081] (detection_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.303517] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.304018] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.310496] (detection_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.312959] (-) TimerEvent: {}
+[1.413406] (-) TimerEvent: {}
+[1.513839] (-) TimerEvent: {}
+[1.607285] (detection_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.613993] (-) TimerEvent: {}
+[1.707920] (detection_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.714155] (-) TimerEvent: {}
+[1.798321] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.810822] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.814350] (-) TimerEvent: {}
+[1.828047] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.832054] (navigation) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/soumo/robot_programming/build/navigation/build', '--no-deps', 'install_data'], 'cwd': '/home/soumo/robot_programming/build/navigation', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'soumo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/soumo/limo_ros2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/soumo', 'OLDPWD': '/home/soumo/robot_programming/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1526', 'SYSTEMD_EXEC_PID': '1745', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3275', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/soumo/limo_ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'soumo', 'JOURNAL_STREAM': '8:32160', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'soumo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/soumo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/soumo-HP-ENVY-x360-Convertible-15-bq2xx:@/tmp/.ICE-unix/1689,unix/soumo-HP-ENVY-x360-Convertible-15-bq2xx:/tmp/.ICE-unix/1689', 'INVOCATION_ID': '323b05388679482c87d85130a9a1f34f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.82K4G2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/soumo/limo_ros2/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:c77e49ad-45ae-41dd-8785-b35ccc39f3f2', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/soumo/robot_programming/build/navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:/home/soumo/limo_ros2/build/voice_control:/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages:/home/soumo/limo_ros2/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/soumo/limo_ros2/install'}, 'shell': False}
+[1.839799] (pothole_detection) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/soumo/robot_programming/build/pothole_detection/build', '--no-deps', 'install_data'], 'cwd': '/home/soumo/robot_programming/build/pothole_detection', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'soumo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/soumo/limo_ros2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/soumo', 'OLDPWD': '/home/soumo/robot_programming/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1526', 'SYSTEMD_EXEC_PID': '1745', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3275', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/soumo/limo_ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'soumo', 'JOURNAL_STREAM': '8:32160', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'soumo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/soumo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/soumo-HP-ENVY-x360-Convertible-15-bq2xx:@/tmp/.ICE-unix/1689,unix/soumo-HP-ENVY-x360-Convertible-15-bq2xx:/tmp/.ICE-unix/1689', 'INVOCATION_ID': '323b05388679482c87d85130a9a1f34f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.82K4G2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/soumo/limo_ros2/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:c77e49ad-45ae-41dd-8785-b35ccc39f3f2', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/soumo/robot_programming/build/pothole_detection', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:/home/soumo/limo_ros2/build/voice_control:/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages:/home/soumo/limo_ros2/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/soumo/limo_ros2/install'}, 'shell': False}
+[1.911551] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.914496] (-) TimerEvent: {}
+[2.014932] (-) TimerEvent: {}
+[2.115330] (-) TimerEvent: {}
+[2.205765] (navigation) StdoutLine: {'line': b'running develop\n'}
+[2.215494] (-) TimerEvent: {}
+[2.225069] (pothole_detection) StdoutLine: {'line': b'running develop\n'}
+[2.315673] (-) TimerEvent: {}
+[2.416088] (-) TimerEvent: {}
+[2.424312] (detection_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.455261] (pothole_detection) StdoutLine: {'line': b'running egg_info\n'}
+[2.455537] (pothole_detection) StdoutLine: {'line': b'creating pothole_detection.egg-info\n'}
+[2.455779] (pothole_detection) StdoutLine: {'line': b'writing pothole_detection.egg-info/PKG-INFO\n'}
+[2.456040] (pothole_detection) StdoutLine: {'line': b'writing dependency_links to pothole_detection.egg-info/dependency_links.txt\n'}
+[2.456308] (pothole_detection) StdoutLine: {'line': b'writing entry points to pothole_detection.egg-info/entry_points.txt\n'}
+[2.456534] (pothole_detection) StdoutLine: {'line': b'writing requirements to pothole_detection.egg-info/requires.txt\n'}
+[2.456780] (pothole_detection) StdoutLine: {'line': b'writing top-level names to pothole_detection.egg-info/top_level.txt\n'}
+[2.457141] (pothole_detection) StdoutLine: {'line': b"writing manifest file 'pothole_detection.egg-info/SOURCES.txt'\n"}
+[2.459300] (navigation) StdoutLine: {'line': b'running egg_info\n'}
+[2.459624] (navigation) StdoutLine: {'line': b'creating navigation.egg-info\n'}
+[2.459799] (navigation) StdoutLine: {'line': b'writing navigation.egg-info/PKG-INFO\n'}
+[2.460065] (pothole_detection) StdoutLine: {'line': b"reading manifest file 'pothole_detection.egg-info/SOURCES.txt'\n"}
+[2.460322] (navigation) StdoutLine: {'line': b'writing dependency_links to navigation.egg-info/dependency_links.txt\n'}
+[2.460565] (navigation) StdoutLine: {'line': b'writing entry points to navigation.egg-info/entry_points.txt\n'}
+[2.460725] (navigation) StdoutLine: {'line': b'writing requirements to navigation.egg-info/requires.txt\n'}
+[2.460863] (navigation) StdoutLine: {'line': b'writing top-level names to navigation.egg-info/top_level.txt\n'}
+[2.461000] (navigation) StdoutLine: {'line': b"writing manifest file 'navigation.egg-info/SOURCES.txt'\n"}
+[2.461198] (pothole_detection) StdoutLine: {'line': b"writing manifest file 'pothole_detection.egg-info/SOURCES.txt'\n"}
+[2.463245] (navigation) StdoutLine: {'line': b"reading manifest file 'navigation.egg-info/SOURCES.txt'\n"}
+[2.464055] (navigation) StdoutLine: {'line': b"writing manifest file 'navigation.egg-info/SOURCES.txt'\n"}
+[2.516242] (-) TimerEvent: {}
+[2.523916] (pothole_detection) StdoutLine: {'line': b'running build_ext\n'}
+[2.524342] (pothole_detection) StdoutLine: {'line': b'Creating /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)\n'}
+[2.525351] (pothole_detection) StdoutLine: {'line': b'Installing dataset_extraction script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection\n'}
+[2.525639] (pothole_detection) StdoutLine: {'line': b'Installing pothole_detection_opencv script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection\n'}
+[2.525948] (pothole_detection) StdoutLine: {'line': b'Installing pothole_detection_yolo script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection\n'}
+[2.526103] (pothole_detection) StdoutLine: {'line': b'Installing pothole_location script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection\n'}
+[2.526322] (pothole_detection) StdoutLine: {'line': b'Installing pothole_location1 script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection\n'}
+[2.526697] (pothole_detection) StdoutLine: {'line': b'\n'}
+[2.526863] (pothole_detection) StdoutLine: {'line': b'Installed /home/soumo/robot_programming/build/pothole_detection\n'}
+[2.527027] (pothole_detection) StdoutLine: {'line': b'running install_data\n'}
+[2.527197] (pothole_detection) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index\n'}
+[2.527859] (pothole_detection) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index\n'}
+[2.529343] (pothole_detection) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index/packages\n'}
+[2.529618] (pothole_detection) StdoutLine: {'line': b'copying resource/pothole_detection -> /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index/packages\n'}
+[2.529790] (pothole_detection) StdoutLine: {'line': b'copying package.xml -> /home/soumo/robot_programming/install/pothole_detection/share/pothole_detection\n'}
+[2.529965] (navigation) StdoutLine: {'line': b'running build_ext\n'}
+[2.530148] (navigation) StdoutLine: {'line': b'Creating /home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)\n'}
+[2.530435] (navigation) StdoutLine: {'line': b'Installing Nav_through_waypoint script to /home/soumo/robot_programming/install/navigation/lib/navigation\n'}
+[2.530795] (navigation) StdoutLine: {'line': b'\n'}
+[2.530991] (navigation) StdoutLine: {'line': b'Installed /home/soumo/robot_programming/build/navigation\n'}
+[2.531165] (navigation) StdoutLine: {'line': b'running install_data\n'}
+[2.531452] (navigation) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/navigation/share/ament_index\n'}
+[2.531630] (navigation) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index\n'}
+[2.531872] (navigation) StdoutLine: {'line': b'creating /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index/packages\n'}
+[2.532046] (navigation) StdoutLine: {'line': b'copying resource/navigation -> /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index/packages\n'}
+[2.532240] (navigation) StdoutLine: {'line': b'copying package.xml -> /home/soumo/robot_programming/install/navigation/share/navigation\n'}
+[2.601635] (pothole_detection) CommandEnded: {'returncode': 0}
+[2.616668] (-) TimerEvent: {}
+[2.705358] (pothole_detection) JobEnded: {'identifier': 'pothole_detection', 'rc': 0}
+[2.708034] (navigation) CommandEnded: {'returncode': 0}
+[2.718727] (-) TimerEvent: {}
+[2.803951] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 0}
+[2.818919] (-) TimerEvent: {}
+[2.833073] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.919123] (-) TimerEvent: {}
+[3.019576] (-) TimerEvent: {}
+[3.120012] (-) TimerEvent: {}
+[3.220545] (-) TimerEvent: {}
+[3.284809] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.320754] (-) TimerEvent: {}
+[3.326917] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.332477] (detection_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.376044] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.376455] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.376680] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.376892] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.406272] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.420965] (-) TimerEvent: {}
+[3.472422] (detection_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.521194] (-) TimerEvent: {}
+[3.532444] (detection_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.534731] (detection_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.541136] (detection_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.593294] (detection_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[3.597396] (detection_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/soumo/robot_programming/build/detection_interfaces\n'}
+[3.607229] (detection_interfaces) CommandEnded: {'returncode': 0}
+[3.608565] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'build'}
+[3.610984] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/soumo/robot_programming/build/detection_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/soumo/robot_programming/build/detection_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'soumo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/soumo/limo_ros2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/soumo'), ('OLDPWD', '/home/soumo/robot_programming/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1526'), ('SYSTEMD_EXEC_PID', '1745'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3275'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/soumo/limo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'soumo'), ('JOURNAL_STREAM', '8:32160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'soumo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/soumo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/soumo-HP-ENVY-x360-Convertible-15-bq2xx:@/tmp/.ICE-unix/1689,unix/soumo-HP-ENVY-x360-Convertible-15-bq2xx:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '323b05388679482c87d85130a9a1f34f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.82K4G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c77e49ad-45ae-41dd-8785-b35ccc39f3f2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/soumo/robot_programming/build/detection_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/soumo/limo_ros2/build/voice_control:/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages:/home/soumo/limo_ros2/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble')]), 'shell': False}
+[3.621390] (-) TimerEvent: {}
+[3.697196] (detection_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.705273] (detection_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.721601] (-) TimerEvent: {}
+[3.728157] (detection_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_detection_interfaces\n'}
+[3.821755] (-) TimerEvent: {}
+[3.922220] (-) TimerEvent: {}
+[4.022737] (-) TimerEvent: {}
+[4.104912] (detection_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.105421] (detection_interfaces) StdoutLine: {'line': b'creating detection_interfaces.egg-info\n'}
+[4.105890] (detection_interfaces) StdoutLine: {'line': b'writing detection_interfaces.egg-info/PKG-INFO\n'}
+[4.106387] (detection_interfaces) StdoutLine: {'line': b'writing dependency_links to detection_interfaces.egg-info/dependency_links.txt\n'}
+[4.106841] (detection_interfaces) StdoutLine: {'line': b'writing top-level names to detection_interfaces.egg-info/top_level.txt\n'}
+[4.107077] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[4.109882] (detection_interfaces) StdoutLine: {'line': b"reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[4.110626] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[4.122957] (-) TimerEvent: {}
+[4.179412] (detection_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_detection_interfaces_egg\n'}
+[4.208414] (detection_interfaces) StdoutLine: {'line': b'[  4%] Built target detection_interfaces__cpp\n'}
+[4.214888] (detection_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/pothole_cordinate__functions.c.o\x1b[0m\n'}
+[4.215356] (detection_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/inference_result_array__functions.c.o\x1b[0m\n'}
+[4.215550] (detection_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/inference_result__functions.c.o\x1b[0m\n'}
+[4.223117] (-) TimerEvent: {}
+[4.227416] (detection_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.227816] (detection_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.228136] (detection_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.323152] (detection_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libdetection_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[4.323458] (-) TimerEvent: {}
+[4.393220] (detection_interfaces) StdoutLine: {'line': b'[ 19%] Built target detection_interfaces__rosidl_generator_c\n'}
+[4.413945] (detection_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.414264] (detection_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.418335] (detection_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.423645] (-) TimerEvent: {}
+[4.524290] (-) TimerEvent: {}
+[4.624933] (-) TimerEvent: {}
+[4.701950] (detection_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/inference_result_array__type_support.cpp.o\x1b[0m\n'}
+[4.702286] (detection_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/inference_result__type_support.cpp.o\x1b[0m\n'}
+[4.711317] (detection_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/pothole_cordinate__type_support.cpp.o\x1b[0m\n'}
+[4.725119] (-) TimerEvent: {}
+[4.825537] (-) TimerEvent: {}
+[4.872091] (detection_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/inference_result__type_support.cpp.o\x1b[0m\n'}
+[4.925707] (-) TimerEvent: {}
+[4.948648] (detection_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o\x1b[0m\n'}
+[5.025861] (-) TimerEvent: {}
+[5.126332] (-) TimerEvent: {}
+[5.162598] (detection_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/inference_result__type_support.cpp.o\x1b[0m\n'}
+[5.226493] (-) TimerEvent: {}
+[5.256774] (detection_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/inference_result__type_support_c.cpp.o\x1b[0m\n'}
+[5.271755] (detection_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/inference_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.297342] (detection_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/inference_result__type_support.c.o\x1b[0m\n'}
+[5.326711] (-) TimerEvent: {}
+[5.377206] (detection_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/inference_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.394342] (detection_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/inference_result_array__type_support.c.o\x1b[0m\n'}
+[5.397597] (detection_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/pothole_cordinate__type_support.cpp.o\x1b[0m\n'}
+[5.414511] (detection_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/pothole_cordinate__type_support.cpp.o\x1b[0m\n'}
+[5.426901] (-) TimerEvent: {}
+[5.486598] (detection_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.488773] (detection_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.490911] (detection_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/pothole_cordinate__type_support.c.o\x1b[0m\n'}
+[5.527064] (-) TimerEvent: {}
+[5.564250] (detection_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libdetection_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.583127] (detection_interfaces) StdoutLine: {'line': b'[ 61%] Built target detection_interfaces__rosidl_typesupport_cpp\n'}
+[5.588842] (detection_interfaces) StdoutLine: {'line': b'[ 61%] Built target detection_interfaces__rosidl_typesupport_c\n'}
+[5.605167] (detection_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/inference_result_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.614821] (detection_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/inference_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.627244] (-) TimerEvent: {}
+[5.652386] (detection_interfaces) StdoutLine: {'line': b'[ 65%] Built target detection_interfaces__rosidl_typesupport_introspection_c\n'}
+[5.675126] (detection_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/pothole_cordinate__type_support.cpp.o\x1b[0m\n'}
+[5.727414] (-) TimerEvent: {}
+[5.769551] (detection_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/pothole_cordinate__type_support_c.cpp.o\x1b[0m\n'}
+[5.827595] (-) TimerEvent: {}
+[5.928369] (-) TimerEvent: {}
+[6.028852] (-) TimerEvent: {}
+[6.133673] (-) TimerEvent: {}
+[6.234296] (-) TimerEvent: {}
+[6.277390] (detection_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.334487] (-) TimerEvent: {}
+[6.402356] (detection_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.405577] (detection_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.434690] (-) TimerEvent: {}
+[6.437640] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[6.534931] (-) TimerEvent: {}
+[6.538114] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.552172] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[6.601643] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces\n'}
+[6.635120] (-) TimerEvent: {}
+[6.646890] (detection_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.735320] (-) TimerEvent: {}
+[6.835804] (-) TimerEvent: {}
+[6.936282] (-) TimerEvent: {}
+[7.036761] (-) TimerEvent: {}
+[7.137786] (-) TimerEvent: {}
+[7.226987] (detection_interfaces) StdoutLine: {'line': b'[ 78%] Built target detection_interfaces__py\n'}
+[7.238024] (-) TimerEvent: {}
+[7.270850] (detection_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_inference_result_array_s.c.o\x1b[0m\n'}
+[7.271214] (detection_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_inference_result_s.c.o\x1b[0m\n'}
+[7.275832] (detection_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_pothole_cordinate_s.c.o\x1b[0m\n'}
+[7.338213] (-) TimerEvent: {}
+[7.438953] (-) TimerEvent: {}
+[7.440352] (detection_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[7.527329] (detection_interfaces) StdoutLine: {'line': b'[ 87%] Built target detection_interfaces__rosidl_generator_py\n'}
+[7.539168] (-) TimerEvent: {}
+[7.562793] (detection_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.566746] (detection_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.576888] (detection_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.639348] (-) TimerEvent: {}
+[7.692499] (detection_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.706318] (detection_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.738654] (detection_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.739463] (-) TimerEvent: {}
+[7.749617] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.771952] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_c__pyext\n'}
+[7.791513] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.812204] (detection_interfaces) CommandEnded: {'returncode': 0}
+[7.839604] (-) TimerEvent: {}
+[7.939999] (-) TimerEvent: {}
+[8.023942] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'install'}
+[8.038936] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/soumo/robot_programming/build/detection_interfaces'], 'cwd': '/home/soumo/robot_programming/build/detection_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'soumo'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/soumo/limo_ros2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/soumo'), ('OLDPWD', '/home/soumo/robot_programming/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1526'), ('SYSTEMD_EXEC_PID', '1745'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3275'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/soumo/limo_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'soumo'), ('JOURNAL_STREAM', '8:32160'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'soumo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/home/soumo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/soumo-HP-ENVY-x360-Convertible-15-bq2xx:@/tmp/.ICE-unix/1689,unix/soumo-HP-ENVY-x360-Convertible-15-bq2xx:/tmp/.ICE-unix/1689'), ('INVOCATION_ID', '323b05388679482c87d85130a9a1f34f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.82K4G2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c77e49ad-45ae-41dd-8785-b35ccc39f3f2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/soumo/robot_programming/build/detection_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/soumo/limo_ros2/build/voice_control:/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages:/home/soumo/limo_ros2/install/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/soumo/limo_ros2/install:/opt/ros/humble')]), 'shell': False}
+[8.040162] (-) TimerEvent: {}
+[8.058943] (detection_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.060267] (detection_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.061088] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces\n'}
+[8.078268] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__functions.h\n'}
+[8.103972] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__struct.h\n'}
+[8.129844] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__type_support.h\n'}
+[8.140397] (-) TimerEvent: {}
+[8.154266] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__functions.h\n'}
+[8.179119] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__struct.h\n'}
+[8.203538] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__type_support.h\n'}
+[8.227745] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__functions.h\n'}
+[8.240601] (-) TimerEvent: {}
+[8.249998] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__struct.h\n'}
+[8.274171] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__type_support.h\n'}
+[8.290931] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result.h\n'}
+[8.305586] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result_array.h\n'}
+[8.319819] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/pothole_cordinate.h\n'}
+[8.340826] (-) TimerEvent: {}
+[8.343681] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.359059] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh\n'}
+[8.373434] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv\n'}
+[8.387648] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_fastrtps_c.h\n'}
+[8.401740] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_fastrtps_c.h\n'}
+[8.414791] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_fastrtps_c.h\n'}
+[8.428130] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.441050] (-) TimerEvent: {}
+[8.453117] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_introspection_c.h\n'}
+[8.477268] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_introspection_c.h\n'}
+[8.490807] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_introspection_c.h\n'}
+[8.503862] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.531992] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__builder.hpp\n'}
+[8.541240] (-) TimerEvent: {}
+[8.547744] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__struct.hpp\n'}
+[8.574099] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__traits.hpp\n'}
+[8.589873] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__builder.hpp\n'}
+[8.604681] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__struct.hpp\n'}
+[8.628109] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__traits.hpp\n'}
+[8.641456] (-) TimerEvent: {}
+[8.649283] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__builder.hpp\n'}
+[8.673654] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__struct.hpp\n'}
+[8.688678] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__traits.hpp\n'}
+[8.703776] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result.hpp\n'}
+[8.719700] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result_array.hpp\n'}
+[8.735016] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/pothole_cordinate.hpp\n'}
+[8.741630] (-) TimerEvent: {}
+[8.750819] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.763756] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.777590] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.803149] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.829157] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.841878] (-) TimerEvent: {}
+[8.853863] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.877964] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.894400] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh\n'}
+[8.909401] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv\n'}
+[8.938759] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.942059] (-) TimerEvent: {}
+[8.954676] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.969813] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.984617] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.012058] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py\n'}
+[9.027086] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[9.041576] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.042207] (-) TimerEvent: {}
+[9.056244] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.075906] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.090179] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.103605] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.117269] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\n'}
+[9.130998] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py\n'}
+[9.142427] (-) TimerEvent: {}
+[9.144957] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result.py\n'}
+[9.171412] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array.py\n'}
+[9.189108] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array_s.c\n'}
+[9.215858] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_s.c\n'}
+[9.231193] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate.py\n'}
+[9.243105] (-) TimerEvent: {}
+[9.250348] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate_s.c\n'}
+[9.274557] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.275195] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.275867] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.276385] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResult.idl\n'}
+[9.292641] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResultArray.idl\n'}
+[9.316265] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/PotholeCordinate.idl\n'}
+[9.340030] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResult.msg\n'}
+[9.343264] (-) TimerEvent: {}
+[9.364078] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResultArray.msg\n'}
+[9.389668] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/PotholeCordinate.msg\n'}
+[9.404849] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces\n'}
+[9.430997] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces\n'}
+[9.443461] (-) TimerEvent: {}
+[9.446840] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh\n'}
+[9.461942] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv\n'}
+[9.476704] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/path.sh\n'}
+[9.503049] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/path.dsv\n'}
+[9.528462] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.bash\n'}
+[9.543620] (-) TimerEvent: {}
+[9.547473] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.sh\n'}
+[9.571906] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.zsh\n'}
+[9.589174] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.dsv\n'}
+[9.615103] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.dsv\n'}
+[9.630397] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces\n'}
+[9.643838] (-) TimerEvent: {}
+[9.645202] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[9.668960] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.688156] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.713673] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.737424] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.744017] (-) TimerEvent: {}
+[9.763812] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.788180] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.814094] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake\n'}
+[9.828749] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake\n'}
+[9.844213] (-) TimerEvent: {}
+[9.855454] (detection_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.xml\n'}
+[9.870007] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so\n'}
+[9.870977] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so" to ""\n'}
+[9.871350] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[9.872812] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.873193] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[9.874113] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.874313] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so\n'}
+[9.875351] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[9.875565] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.876861] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.877092] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[9.878341] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.878556] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so\n'}
+[9.879763] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[9.920843] (detection_interfaces) StdoutLine: {'line': b"Listing '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...\n"}
+[9.921206] (detection_interfaces) StdoutLine: {'line': b"Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py'...\n"}
+[9.921480] (detection_interfaces) StdoutLine: {'line': b"Listing '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...\n"}
+[9.921685] (detection_interfaces) StdoutLine: {'line': b"Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py'...\n"}
+[9.921904] (detection_interfaces) StdoutLine: {'line': b"Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result.py'...\n"}
+[9.922104] (detection_interfaces) StdoutLine: {'line': b"Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array.py'...\n"}
+[9.922308] (detection_interfaces) StdoutLine: {'line': b"Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate.py'...\n"}
+[9.926993] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so\n'}
+[9.927971] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so" to ""\n'}
+[9.928396] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake\n'}
+[9.928954] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.929715] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.930303] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.930995] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.931640] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.932236] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[9.932887] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.933541] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake\n'}
+[9.934196] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.934887] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.935563] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.936193] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.936835] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[9.937506] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.938148] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake\n'}
+[9.938821] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.944541] (-) TimerEvent: {}
+[9.946265] (detection_interfaces) CommandEnded: {'returncode': 0}
+[10.044905] (-) TimerEvent: {}
+[10.145475] (-) TimerEvent: {}
+[10.245942] (-) TimerEvent: {}
+[10.346442] (-) TimerEvent: {}
+[10.412108] (detection_interfaces) JobEnded: {'identifier': 'detection_interfaces', 'rc': 0}
+[10.413372] (-) EventReactorShutdown: {}

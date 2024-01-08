@@ -1,0 +1,249 @@
+[0.328s] Invoking command in '/home/soumo/robot_programming/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/soumo/robot_programming/src/detection_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/soumo/robot_programming/install/detection_interfaces
+[0.792s] -- The C compiler identification is GNU 11.4.0
+[0.859s] -- The CXX compiler identification is GNU 11.4.0
+[0.891s] -- Detecting C compiler ABI info
+[1.046s] -- Detecting C compiler ABI info - done
+[1.067s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.073s] -- Detecting C compile features
+[1.074s] -- Detecting C compile features - done
+[1.086s] -- Detecting CXX compiler ABI info
+[1.293s] -- Detecting CXX compiler ABI info - done
+[1.302s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.303s] -- Detecting CXX compile features
+[1.303s] -- Detecting CXX compile features - done
+[1.310s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.606s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.707s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.797s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.811s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.827s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.911s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.423s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.284s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.326s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.332s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.375s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.376s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.376s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.376s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.405s] -- Found PythonExtra: .so  
+[3.472s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.532s] -- Added test 'lint_cmake' to check CMake code style
+[3.534s] -- Added test 'xmllint' to check XML markup files
+[3.540s] -- Configuring done
+[3.592s] -- Generating done
+[3.597s] -- Build files have been written to: /home/soumo/robot_programming/build/detection_interfaces
+[3.607s] Invoked command in '/home/soumo/robot_programming/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/soumo/robot_programming/src/detection_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/soumo/robot_programming/install/detection_interfaces
+[3.611s] Invoking command in '/home/soumo/robot_programming/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/detection_interfaces -- -j8 -l8
+[3.696s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.704s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.727s] [  4%] Built target ament_cmake_python_symlink_detection_interfaces
+[4.104s] running egg_info
+[4.105s] creating detection_interfaces.egg-info
+[4.105s] writing detection_interfaces.egg-info/PKG-INFO
+[4.106s] writing dependency_links to detection_interfaces.egg-info/dependency_links.txt
+[4.106s] writing top-level names to detection_interfaces.egg-info/top_level.txt
+[4.106s] writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[4.109s] reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[4.110s] writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[4.179s] [  4%] Built target ament_cmake_python_build_detection_interfaces_egg
+[4.208s] [  4%] Built target detection_interfaces__cpp
+[4.214s] [  8%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/pothole_cordinate__functions.c.o[0m
+[4.214s] [  8%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/inference_result_array__functions.c.o[0m
+[4.215s] [ 10%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/inference_result__functions.c.o[0m
+[4.227s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.227s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.227s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.322s] [ 19%] [32m[1mLinking C shared library libdetection_interfaces__rosidl_generator_c.so[0m
+[4.392s] [ 19%] Built target detection_interfaces__rosidl_generator_c
+[4.413s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.413s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.418s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.701s] [ 29%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/inference_result_array__type_support.cpp.o[0m
+[4.701s] [ 29%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/inference_result__type_support.cpp.o[0m
+[4.710s] [ 31%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/pothole_cordinate__type_support.cpp.o[0m
+[4.871s] [ 34%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/inference_result__type_support.cpp.o[0m
+[4.948s] [ 36%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o[0m
+[5.162s] [ 38%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/inference_result__type_support.cpp.o[0m
+[5.256s] [ 40%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/inference_result__type_support_c.cpp.o[0m
+[5.271s] [ 42%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/inference_result_array__type_support.cpp.o[0m
+[5.297s] [ 44%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/inference_result__type_support.c.o[0m
+[5.376s] [ 46%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/inference_result_array__type_support.cpp.o[0m
+[5.394s] [ 48%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/inference_result_array__type_support.c.o[0m
+[5.397s] [ 51%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/pothole_cordinate__type_support.cpp.o[0m
+[5.414s] [ 53%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/pothole_cordinate__type_support.cpp.o[0m
+[5.486s] [ 55%] [32m[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_cpp.so[0m
+[5.488s] [ 57%] [32m[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_c.so[0m
+[5.490s] [ 59%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/pothole_cordinate__type_support.c.o[0m
+[5.563s] [ 61%] [32m[1mLinking C shared library libdetection_interfaces__rosidl_typesupport_introspection_c.so[0m
+[5.582s] [ 61%] Built target detection_interfaces__rosidl_typesupport_cpp
+[5.588s] [ 61%] Built target detection_interfaces__rosidl_typesupport_c
+[5.604s] [ 63%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/inference_result_array__type_support_c.cpp.o[0m
+[5.614s] [ 65%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/inference_result_array__type_support.cpp.o[0m
+[5.652s] [ 65%] Built target detection_interfaces__rosidl_typesupport_introspection_c
+[5.674s] [ 68%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/pothole_cordinate__type_support.cpp.o[0m
+[5.769s] [ 70%] [32mBuilding CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/pothole_cordinate__type_support_c.cpp.o[0m
+[6.276s] [ 72%] [32m[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.401s] [ 74%] [32m[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[6.405s] [ 76%] [32m[1mLinking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.437s] [ 76%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp
+[6.537s] [ 76%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp
+[6.551s] [ 76%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c
+[6.601s] [ 76%] Built target detection_interfaces
+[6.646s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.226s] [ 78%] Built target detection_interfaces__py
+[7.270s] [ 82%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_inference_result_array_s.c.o[0m
+[7.270s] [ 82%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_inference_result_s.c.o[0m
+[7.275s] [ 85%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_pothole_cordinate_s.c.o[0m
+[7.440s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so[0m
+[7.526s] [ 87%] Built target detection_interfaces__rosidl_generator_py
+[7.562s] [ 89%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.566s] [ 91%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.576s] [ 93%] [32mBuilding C object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.692s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.706s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.738s] [100%] [32m[1mLinking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.749s] [100%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.771s] [100%] Built target detection_interfaces__rosidl_typesupport_c__pyext
+[7.791s] [100%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.811s] Invoked command in '/home/soumo/robot_programming/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/detection_interfaces -- -j8 -l8
+[8.038s] Invoking command in '/home/soumo/robot_programming/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/detection_interfaces
+[8.058s] -- Install configuration: ""
+[8.059s] -- Execute custom install script
+[8.060s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces
+[8.077s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__functions.h
+[8.103s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__struct.h
+[8.129s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__type_support.h
+[8.153s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__functions.h
+[8.178s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__struct.h
+[8.203s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__type_support.h
+[8.227s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__functions.h
+[8.249s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__struct.h
+[8.273s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__type_support.h
+[8.290s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result.h
+[8.305s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result_array.h
+[8.319s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/pothole_cordinate.h
+[8.343s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.358s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh
+[8.373s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv
+[8.387s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_fastrtps_c.h
+[8.401s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_fastrtps_c.h
+[8.414s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_fastrtps_c.h
+[8.427s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.452s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_introspection_c.h
+[8.476s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_introspection_c.h
+[8.490s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_introspection_c.h
+[8.503s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.531s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__builder.hpp
+[8.547s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__struct.hpp
+[8.573s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__traits.hpp
+[8.589s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__builder.hpp
+[8.604s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__struct.hpp
+[8.627s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__traits.hpp
+[8.648s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__builder.hpp
+[8.673s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__struct.hpp
+[8.688s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__traits.hpp
+[8.703s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result.hpp
+[8.719s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/inference_result_array.hpp
+[8.734s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/pothole_cordinate.hpp
+[8.750s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_fastrtps_cpp.hpp
+[8.763s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_fastrtps_cpp.hpp
+[8.777s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_fastrtps_cpp.hpp
+[8.802s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.828s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result__rosidl_typesupport_introspection_cpp.hpp
+[8.853s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/inference_result_array__rosidl_typesupport_introspection_cpp.hpp
+[8.877s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/pothole_cordinate__rosidl_typesupport_introspection_cpp.hpp
+[8.894s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh
+[8.909s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv
+[8.938s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[8.954s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.969s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.984s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[9.011s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py
+[9.026s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c
+[9.041s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.055s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[9.075s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.089s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.103s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.116s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so
+[9.130s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py
+[9.144s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result.py
+[9.171s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array.py
+[9.188s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array_s.c
+[9.215s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_s.c
+[9.230s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate.py
+[9.250s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate_s.c
+[9.274s] -- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.274s] -- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.275s] -- Up-to-date symlink: /home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.275s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResult.idl
+[9.292s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResultArray.idl
+[9.315s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/PotholeCordinate.idl
+[9.339s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResult.msg
+[9.363s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/InferenceResultArray.msg
+[9.389s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/msg/PotholeCordinate.msg
+[9.404s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces
+[9.430s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces
+[9.446s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh
+[9.461s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv
+[9.476s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/path.sh
+[9.502s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/environment/path.dsv
+[9.528s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.bash
+[9.547s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.sh
+[9.571s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.zsh
+[9.588s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/local_setup.dsv
+[9.614s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.dsv
+[9.630s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces
+[9.644s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake
+[9.668s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.687s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[9.713s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[9.737s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.763s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.787s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.813s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake
+[9.828s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake
+[9.855s] -- Symlinking: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.xml
+[9.869s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so
+[9.870s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so" to ""
+[9.870s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
+[9.872s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[9.872s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so
+[9.873s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[9.873s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so
+[9.874s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so" to ""
+[9.875s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[9.876s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.876s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
+[9.877s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[9.878s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so
+[9.879s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so" to ""
+[9.920s] Listing '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...
+[9.920s] Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py'...
+[9.921s] Listing '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...
+[9.921s] Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py'...
+[9.921s] Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result.py'...
+[9.921s] Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_inference_result_array.py'...
+[9.921s] Compiling '/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_pothole_cordinate.py'...
+[9.926s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so
+[9.927s] -- Set runtime path of "/home/soumo/robot_programming/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so" to ""
+[9.928s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake
+[9.928s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake
+[9.929s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[9.929s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.930s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[9.931s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.931s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake
+[9.932s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[9.933s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake
+[9.933s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.934s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.935s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[9.935s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.936s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake
+[9.937s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[9.937s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake
+[9.938s] -- Installing: /home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[9.946s] Invoked command in '/home/soumo/robot_programming/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/detection_interfaces

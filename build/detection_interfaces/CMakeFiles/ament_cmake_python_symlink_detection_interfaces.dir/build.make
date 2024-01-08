@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soumo/ros2_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /home/soumo/robot_programming/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soumo/ros2_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /home/soumo/robot_programming/build/detection_interfaces
 
 # Utility rule file for ament_cmake_python_symlink_detection_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/compiler_
 include CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_detection_interfaces:
-	/usr/bin/cmake -E create_symlink /home/soumo/ros2_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/ament_cmake_python/detection_interfaces/detection_interfaces
+	/usr/bin/cmake -E create_symlink /home/soumo/robot_programming/build/detection_interfaces/rosidl_generator_py/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/ament_cmake_python/detection_interfaces/detection_interfaces
 
 ament_cmake_python_symlink_detection_interfaces: CMakeFiles/ament_cmake_python_symlink_detection_interfaces
 ament_cmake_python_symlink_detection_interfaces: CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/depend:
-	cd /home/soumo/ros2_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/src/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces /home/soumo/ros2_ws/build/detection_interfaces/CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/soumo/robot_programming/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/src/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces /home/soumo/robot_programming/build/detection_interfaces/CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_detection_interfaces.dir/depend
 

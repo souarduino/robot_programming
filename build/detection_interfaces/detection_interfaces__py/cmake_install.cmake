@@ -1,8 +1,8 @@
-# Install script for directory: /home/soumo/ros2_ws/build/detection_interfaces/detection_interfaces__py
+# Install script for directory: /home/soumo/robot_programming/build/detection_interfaces/detection_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/soumo/ros2_ws/install/detection_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/soumo/robot_programming/install/detection_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

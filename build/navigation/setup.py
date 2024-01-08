@@ -1,1 +1,1 @@
-/home/soumo/ros2_ws/src/navigation/setup.py
+/home/soumo/robot_programming/src/navigation/setup.py

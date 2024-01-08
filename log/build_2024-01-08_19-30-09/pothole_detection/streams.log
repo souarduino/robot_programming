@@ -1,0 +1,28 @@
+[1.624s] Invoking command in '/home/soumo/robot_programming/build/pothole_detection': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build --no-deps install_data
+[2.007s] running develop
+[2.237s] running egg_info
+[2.237s] creating pothole_detection.egg-info
+[2.238s] writing pothole_detection.egg-info/PKG-INFO
+[2.238s] writing dependency_links to pothole_detection.egg-info/dependency_links.txt
+[2.238s] writing entry points to pothole_detection.egg-info/entry_points.txt
+[2.238s] writing requirements to pothole_detection.egg-info/requires.txt
+[2.239s] writing top-level names to pothole_detection.egg-info/top_level.txt
+[2.239s] writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.242s] reading manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.243s] writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.306s] running build_ext
+[2.306s] Creating /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)
+[2.307s] Installing dataset_extraction script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[2.308s] Installing pothole_detection_opencv script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[2.308s] Installing pothole_detection_yolo script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[2.308s] Installing pothole_location script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[2.308s] Installing pothole_location1 script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[2.309s] 
+[2.309s] Installed /home/soumo/robot_programming/build/pothole_detection
+[2.309s] running install_data
+[2.309s] creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index
+[2.311s] creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index
+[2.311s] creating /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index/packages
+[2.311s] copying resource/pothole_detection -> /home/soumo/robot_programming/install/pothole_detection/share/ament_index/resource_index/packages
+[2.312s] copying package.xml -> /home/soumo/robot_programming/install/pothole_detection/share/pothole_detection
+[2.384s] Invoked command in '/home/soumo/robot_programming/build/pothole_detection' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build --no-deps install_data
