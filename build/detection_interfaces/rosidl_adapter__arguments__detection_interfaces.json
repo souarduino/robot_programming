@@ -1,0 +1,8 @@
+{
+  "package_name": "detection_interfaces",
+  "non_idl_tuples": [
+    "/home/soumo/ros2_ws/src/detection_interfaces:msg/InferenceResult.msg",
+    "/home/soumo/ros2_ws/src/detection_interfaces:msg/InferenceResultArray.msg",
+    "/home/soumo/ros2_ws/src/detection_interfaces:msg/PotholeCordinate.msg"
+  ]
+}

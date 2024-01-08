@@ -1,0 +1,6 @@
+msg/InferenceResult.idl
+msg/InferenceResult.msg
+msg/InferenceResultArray.idl
+msg/InferenceResultArray.msg
+msg/PotholeCordinate.idl
+msg/PotholeCordinate.msg

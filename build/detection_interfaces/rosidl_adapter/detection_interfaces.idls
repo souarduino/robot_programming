@@ -1,0 +1,3 @@
+/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResult.idl
+/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/InferenceResultArray.idl
+/home/soumo/ros2_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/PotholeCordinate.idl

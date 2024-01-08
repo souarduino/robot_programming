@@ -1,0 +1,24 @@
+[1.869s] Invoking command in '/home/soumo/ros2_ws/build/pothole_detection': PYTHONPATH=/home/soumo/ros2_ws/build/pothole_detection/prefix_override:/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/pothole_detection/build --no-deps install_data
+[2.247s] running develop
+[2.483s] running egg_info
+[2.484s] creating pothole_detection.egg-info
+[2.484s] writing pothole_detection.egg-info/PKG-INFO
+[2.484s] writing dependency_links to pothole_detection.egg-info/dependency_links.txt
+[2.484s] writing entry points to pothole_detection.egg-info/entry_points.txt
+[2.485s] writing requirements to pothole_detection.egg-info/requires.txt
+[2.485s] writing top-level names to pothole_detection.egg-info/top_level.txt
+[2.485s] writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.487s] reading manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.488s] writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.561s] running build_ext
+[2.561s] Creating /home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)
+[2.563s] Installing dataset_extraction=pothole_detection.dataset_extraction:mainpothole_detection_yolov8 script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.563s] 
+[2.564s] Installed /home/soumo/ros2_ws/build/pothole_detection
+[2.564s] running install_data
+[2.564s] creating /home/soumo/ros2_ws/install/pothole_detection/share/ament_index
+[2.564s] creating /home/soumo/ros2_ws/install/pothole_detection/share/ament_index/resource_index
+[2.564s] creating /home/soumo/ros2_ws/install/pothole_detection/share/ament_index/resource_index/packages
+[2.565s] copying resource/pothole_detection -> /home/soumo/ros2_ws/install/pothole_detection/share/ament_index/resource_index/packages
+[2.565s] copying package.xml -> /home/soumo/ros2_ws/install/pothole_detection/share/pothole_detection
+[2.657s] Invoked command in '/home/soumo/ros2_ws/build/pothole_detection' returned '0': PYTHONPATH=/home/soumo/ros2_ws/build/pothole_detection/prefix_override:/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/pothole_detection/build --no-deps install_data

@@ -1,0 +1,3 @@
+[console_scripts]
+Nav_through_waypoint = navigation.waypointfollower:main
+

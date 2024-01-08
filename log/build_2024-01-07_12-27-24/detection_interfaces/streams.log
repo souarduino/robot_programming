@@ -1,0 +1,44 @@
+[0.344s] Invoking command in '/home/soumo/ros2_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/soumo/ros2_ws/src/detection_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/soumo/ros2_ws/install/detection_interfaces
+[0.843s] -- The C compiler identification is GNU 11.4.0
+[0.844s] -- The CXX compiler identification is GNU 11.4.0
+[0.844s] -- Detecting C compiler ABI info
+[0.844s] -- Detecting C compiler ABI info - done
+[0.844s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.845s] -- Detecting C compile features
+[0.845s] -- Detecting C compile features - done
+[0.845s] -- Detecting CXX compiler ABI info
+[0.895s] -- Detecting CXX compiler ABI info - done
+[0.912s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.913s] -- Detecting CXX compile features
+[0.913s] -- Detecting CXX compile features - done
+[0.918s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.202s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.321s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.367s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.506s] -- Added test 'lint_cmake' to check CMake code style
+[1.508s] -- Added test 'xmllint' to check XML markup files
+[1.510s] -- Configuring done
+[1.516s] -- Generating done
+[1.518s] -- Build files have been written to: /home/soumo/ros2_ws/build/detection_interfaces
+[1.527s] Invoked command in '/home/soumo/ros2_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/soumo/ros2_ws/src/detection_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/soumo/ros2_ws/install/detection_interfaces
+[1.531s] Invoking command in '/home/soumo/ros2_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/soumo/ros2_ws/build/detection_interfaces -- -j8 -l8
+[1.605s] Invoked command in '/home/soumo/ros2_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/soumo/ros2_ws/build/detection_interfaces -- -j8 -l8
+[1.675s] Invoking command in '/home/soumo/ros2_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/soumo/ros2_ws/build/detection_interfaces
+[1.691s] -- Install configuration: ""
+[1.691s] -- Execute custom install script
+[1.692s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces
+[1.712s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces
+[1.731s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh
+[1.749s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv
+[1.767s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh
+[1.784s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv
+[1.802s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash
+[1.821s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh
+[1.839s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh
+[1.858s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv
+[1.875s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/package.dsv
+[1.895s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces
+[1.918s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake
+[1.938s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake
+[1.958s] -- Symlinking: /home/soumo/ros2_ws/install/detection_interfaces/share/detection_interfaces/package.xml
+[1.979s] Invoked command in '/home/soumo/ros2_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/soumo/ros2_ws/build/detection_interfaces

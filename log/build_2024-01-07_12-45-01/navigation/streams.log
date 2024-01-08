@@ -1,0 +1,17 @@
+[2.336s] Invoking command in '/home/soumo/ros2_ws/build/navigation': PYTHONPATH=/home/soumo/ros2_ws/build/navigation/prefix_override:/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/navigation/build --no-deps install_data
+[3.099s] running develop
+[3.413s] running egg_info
+[3.413s] writing navigation.egg-info/PKG-INFO
+[3.414s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[3.414s] writing entry points to navigation.egg-info/entry_points.txt
+[3.414s] writing requirements to navigation.egg-info/requires.txt
+[3.415s] writing top-level names to navigation.egg-info/top_level.txt
+[3.420s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[3.421s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[3.510s] running build_ext
+[3.510s] Creating /home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[3.512s] Installing Nav_through_waypoint script to /home/soumo/ros2_ws/install/navigation/lib/navigation
+[3.513s] 
+[3.513s] Installed /home/soumo/ros2_ws/build/navigation
+[3.513s] running install_data
+[3.607s] Invoked command in '/home/soumo/ros2_ws/build/navigation' returned '0': PYTHONPATH=/home/soumo/ros2_ws/build/navigation/prefix_override:/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/navigation/build --no-deps install_data

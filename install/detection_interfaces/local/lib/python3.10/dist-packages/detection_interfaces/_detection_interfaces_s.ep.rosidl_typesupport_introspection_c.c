@@ -1,0 +1,1 @@
+/home/soumo/ros2_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c

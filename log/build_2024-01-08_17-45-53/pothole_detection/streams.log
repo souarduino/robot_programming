@@ -1,0 +1,21 @@
+[1.794s] Invoking command in '/home/soumo/ros2_ws/build/pothole_detection': PYTHONPATH=/home/soumo/ros2_ws/build/pothole_detection/prefix_override:/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/pothole_detection/build --no-deps install_data
+[2.268s] running develop
+[2.612s] running egg_info
+[2.612s] writing pothole_detection.egg-info/PKG-INFO
+[2.613s] writing dependency_links to pothole_detection.egg-info/dependency_links.txt
+[2.614s] writing entry points to pothole_detection.egg-info/entry_points.txt
+[2.614s] writing requirements to pothole_detection.egg-info/requires.txt
+[2.614s] writing top-level names to pothole_detection.egg-info/top_level.txt
+[2.617s] reading manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.619s] writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+[2.696s] running build_ext
+[2.696s] Creating /home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)
+[2.699s] Installing dataset_extraction script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.699s] Installing pothole_detection_opencv script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.699s] Installing pothole_detection_yolo script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.700s] Installing pothole_location script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.700s] Installing pothole_location1 script to /home/soumo/ros2_ws/install/pothole_detection/lib/pothole_detection
+[2.700s] 
+[2.700s] Installed /home/soumo/ros2_ws/build/pothole_detection
+[2.700s] running install_data
+[2.786s] Invoked command in '/home/soumo/ros2_ws/build/pothole_detection' returned '0': PYTHONPATH=/home/soumo/ros2_ws/build/pothole_detection/prefix_override:/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/pothole_detection/build --no-deps install_data

@@ -1,0 +1,24 @@
+[1.974s] Invoking command in '/home/soumo/ros2_ws/build/navigation': PYTHONPATH=/home/soumo/ros2_ws/build/navigation/prefix_override:/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/navigation/build --no-deps install_data
+[2.371s] running develop
+[2.619s] running egg_info
+[2.619s] creating navigation.egg-info
+[2.620s] writing navigation.egg-info/PKG-INFO
+[2.620s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[2.620s] writing entry points to navigation.egg-info/entry_points.txt
+[2.621s] writing requirements to navigation.egg-info/requires.txt
+[2.621s] writing top-level names to navigation.egg-info/top_level.txt
+[2.621s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[2.623s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[2.624s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[2.709s] running build_ext
+[2.709s] Creating /home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[2.710s] Installing Nav_through_waypoint script to /home/soumo/ros2_ws/install/navigation/lib/navigation
+[2.712s] 
+[2.712s] Installed /home/soumo/ros2_ws/build/navigation
+[2.712s] running install_data
+[2.712s] creating /home/soumo/ros2_ws/install/navigation/share/ament_index
+[2.712s] creating /home/soumo/ros2_ws/install/navigation/share/ament_index/resource_index
+[2.713s] creating /home/soumo/ros2_ws/install/navigation/share/ament_index/resource_index/packages
+[2.713s] copying resource/navigation -> /home/soumo/ros2_ws/install/navigation/share/ament_index/resource_index/packages
+[2.713s] copying package.xml -> /home/soumo/ros2_ws/install/navigation/share/navigation
+[2.913s] Invoked command in '/home/soumo/ros2_ws/build/navigation' returned '0': PYTHONPATH=/home/soumo/ros2_ws/build/navigation/prefix_override:/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/ros2_ws/build/navigation/build --no-deps install_data

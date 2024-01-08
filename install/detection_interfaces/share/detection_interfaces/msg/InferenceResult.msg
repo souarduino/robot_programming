@@ -1,0 +1,1 @@
+/home/soumo/ros2_ws/src/detection_interfaces/msg/InferenceResult.msg

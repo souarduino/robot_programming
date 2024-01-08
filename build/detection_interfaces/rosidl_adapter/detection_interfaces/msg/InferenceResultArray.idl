@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from detection_interfaces/msg/InferenceResultArray.msg
+// generated code does not contain a copyright notice
+
+#include "detection_interfaces/msg/InferenceResult.idl"
+
+module detection_interfaces {
+  module msg {
+    struct InferenceResultArray {
+      sequence<detection_interfaces::msg::InferenceResult> results;
+    };
+  };
+};

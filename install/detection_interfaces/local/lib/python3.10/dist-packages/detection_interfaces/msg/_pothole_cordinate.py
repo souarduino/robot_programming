@@ -1,0 +1,1 @@
+/home/soumo/ros2_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_pothole_cordinate.py

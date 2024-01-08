@@ -1,0 +1,7 @@
+[console_scripts]
+dataset_extraction = pothole_detection.dataset_extraction:main
+pothole_detection_opencv = pothole_detection.potholeDetectorOpencv:main
+pothole_detection_yolo = pothole_detection.pothole_detection_yolov8:main
+pothole_location = pothole_detection.pothole_cordinate:main
+pothole_location1 = pothole_detection.pothole_coordinate:main
+
