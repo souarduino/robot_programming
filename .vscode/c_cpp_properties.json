@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/soumo/robot_programming/install/detection_interfaces/include/**",
+        "/home/soumo/ros2_ws/install/detection_interfaces/include/**",
+        "/home/soumo/limo_ros2/install/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/soumo/robot_programming/src/detection_interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -11,7 +11,7 @@ from tf2_ros import Buffer, TransformListener
 
 # ROS Messages
 from sensor_msgs.msg import Image, CameraInfo
-from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import PoseStamped,PoseArray
 from cv_bridge import CvBridge, CvBridgeError
 from tf2_geometry_msgs import do_transform_pose
 import numpy as np
@@ -51,7 +51,8 @@ class ObjectDetector(Node):
                                                 self.camera_info_callback, 
                                                 qos_profile=qos.qos_profile_sensor_data)
         self.img_pub = self.create_publisher(Image, "/opencv_image_result", 1)
-        self.object_location_pub = self.create_publisher(PoseStamped, '/limo/object_location', 10)
+        self.object_location_pub = self.create_publisher(PoseArray, '/limo/object_location', 10)
+        self.pothole_location_pub = self.create_publisher(PoseArray, '/limo/pothole_location_array', 10)
 
         
 
@@ -81,6 +82,10 @@ class ObjectDetector(Node):
         self.image_depth_ros = data
 
     def image_color_callback(self, data):
+        array_pose=PoseArray()
+        pothole_array_pose=PoseArray()
+        array_pose.header.frame_id = "depth_link"
+        pothole_array_pose.header.frame_id="odom"
         # wait for camera_model and depth image to arrive
         if self.camera_model is None:
             return
@@ -103,21 +108,17 @@ class ObjectDetector(Node):
             for contour in contours:
                 nu_bbox+=1
                 if cv2.contourArea(contour)>500:
-                     x,y,w,h=cv2.boundingRect(contour)
-                     coordinates = (x,y-10)
+                     xb,yb,w,h=cv2.boundingRect(contour)
+                     coordinates = (xb,yb-10)
                      text="pothole"+str(nu_bbox)
                      image = cv2.putText(image_color, text, coordinates, font, fontScale, color, thickness, cv2.LINE_AA)
-                     image=cv2.rectangle(image_color,(x,y),(x+w,y+h),(0,0,255),5)
+                     image=cv2.rectangle(image_color,(xb,yb),(xb+w,yb+h),(0,0,255),5)
                      self.img_pub.publish(self.bridge.cv2_to_imgmsg(image,"bgr8"))
                      # calculate the y,x centroid
-                     image_coords = ((x+w)/2,(y+h)/2)
-            
-                     # "map" from color to depth image
-                     depth_coords = (image_depth.shape[0]/2 + (image_coords[0] - image_color.shape[0]/2)*self.color2depth_aspect, 
-                        image_depth.shape[1]/2 + (image_coords[1] - image_color.shape[1]/2)*self.color2depth_aspect)
+                     image_coords = (xb+w/2,yb+h/2)
+                     depth_coords = (image_depth.shape[0]/2 + (image_coords[0] - image_depth.shape[0]/2)*self.color2depth_aspect, image_depth.shape[1]/2 + (image_coords[1] - image_depth.shape[1]/2)*self.color2depth_aspect)
                      # get the depth reading at the centroid location
                      depth_value = image_depth[int(depth_coords[0]), int(depth_coords[1])] # you might need to do some boundary checking first!
-
                      # calculate object's 3d location in camera coords
                      camera_coords = self.camera_model.projectPixelTo3dRay((image_coords[1], image_coords[0])) #project the image coords (x,y) into 3D ray in camera coords 
                      camera_coords = [x/camera_coords[2] for x in camera_coords] # adjust the resulting vector so that z = 1
@@ -132,12 +133,21 @@ class ObjectDetector(Node):
                      object_location.pose.position.x = camera_coords[0]
                      object_location.pose.position.y = camera_coords[1]
                      object_location.pose.position.z = camera_coords[2]
-                             # publish so we can see that in rviz
-                     self.object_location_pub.publish(object_location)        
+                     array_pose.poses.append(object_location.pose)
+                     # publish so we can see that in rviz
+                     #self.object_location_pub.publish(object_location)        
 
                      # print out the coordinates in the odom frame
-                     transform = self.get_tf_transform('depth_link', 'odom')
+                     transform = self.get_tf_transform('odom','depth_link')
                      p_camera = do_transform_pose(object_location.pose, transform)
+                     # TODO use p_camera to build new Pose object and append to array_poses for pothole location in world frame
+                     pothole_array_pose.poses.append(p_camera)
+                     print('odom coords: ', p_camera.position)
+            self.object_location_pub.publish(array_pose)
+            self.pothole_location_pub.publish(pothole_array_pose)
+            
+                     # "map" from color to depth image
+                     
         else:
             print("no pothole detected in the frame")
             self.img_pub.publish(self.bridge.cv2_to_imgmsg(image_color,"bgr8"))

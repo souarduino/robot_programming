@@ -1,0 +1,36 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/soumo/robot_programming/build/pothole_detection",
+        "/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages",
+        "/home/soumo/robot_programming/build/navigation",
+        "/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages",
+        "/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages",
+        "/home/soumo/ros2_ws/build/pothole_detection",
+        "/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages",
+        "/home/soumo/ros2_ws/build/navigation",
+        "/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages",
+        "/home/soumo/ros2_ws/install/detection_interfaces/local/lib/python3.10/dist-packages",
+        "/home/soumo/limo_ros2/build/voice_control",
+        "/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages",
+        "/home/soumo/limo_ros2/install/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/soumo/robot_programming/build/pothole_detection",
+        "/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages",
+        "/home/soumo/robot_programming/build/navigation",
+        "/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages",
+        "/home/soumo/robot_programming/install/detection_interfaces/local/lib/python3.10/dist-packages",
+        "/home/soumo/ros2_ws/build/pothole_detection",
+        "/home/soumo/ros2_ws/install/pothole_detection/lib/python3.10/site-packages",
+        "/home/soumo/ros2_ws/build/navigation",
+        "/home/soumo/ros2_ws/install/navigation/lib/python3.10/site-packages",
+        "/home/soumo/ros2_ws/install/detection_interfaces/local/lib/python3.10/dist-packages",
+        "/home/soumo/limo_ros2/build/voice_control",
+        "/home/soumo/limo_ros2/install/local/lib/python3.10/dist-packages",
+        "/home/soumo/limo_ros2/install/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
