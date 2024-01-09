@@ -16,6 +16,7 @@ from geometry_msgs.msg import PoseStamped, PoseArray
 from cv_bridge import CvBridge, CvBridgeError
 from tf2_geometry_msgs import do_transform_pose
 from detection_interfaces.msg import InferenceResultArray
+import threading
 
 class potholePose(Node):
     camera_model = None

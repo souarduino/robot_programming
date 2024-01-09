@@ -1,0 +1,24 @@
+[3.054s] Invoking command in '/home/soumo/robot_programming/build/navigation': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data
+[3.718s] running develop
+[4.055s] running egg_info
+[4.055s] creating navigation.egg-info
+[4.056s] writing navigation.egg-info/PKG-INFO
+[4.056s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[4.056s] writing entry points to navigation.egg-info/entry_points.txt
+[4.057s] writing requirements to navigation.egg-info/requires.txt
+[4.057s] writing top-level names to navigation.egg-info/top_level.txt
+[4.057s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[4.060s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[4.061s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[4.138s] running build_ext
+[4.138s] Creating /home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[4.139s] Installing Nav_through_waypoint script to /home/soumo/robot_programming/install/navigation/lib/navigation
+[4.139s] 
+[4.139s] Installed /home/soumo/robot_programming/build/navigation
+[4.140s] running install_data
+[4.140s] creating /home/soumo/robot_programming/install/navigation/share/ament_index
+[4.140s] creating /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index
+[4.140s] creating /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index/packages
+[4.140s] copying resource/navigation -> /home/soumo/robot_programming/install/navigation/share/ament_index/resource_index/packages
+[4.141s] copying package.xml -> /home/soumo/robot_programming/install/navigation/share/navigation
+[4.339s] Invoked command in '/home/soumo/robot_programming/build/navigation' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data

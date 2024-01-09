@@ -1,0 +1,32 @@
+[0.546s] Invoking command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup -- -j8 -l8
+[1.340s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.340s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.341s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.341s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.342s] -- Added test 'lint_cmake' to check CMake code style
+[1.342s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.342s] -- Added test 'xmllint' to check XML markup files
+[1.342s] -- Configuring done
+[1.342s] -- Generating done
+[1.343s] -- Build files have been written to: /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup
+[1.909s] Invoked command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup -- -j8 -l8
+[1.986s] Invoking command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup
+[1.999s] -- Install configuration: ""
+[2.000s] -- Execute custom install script
+[2.001s] -- Symlinking: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/launch/assessment.launch.py
+[2.020s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/ament_index/resource_index/package_run_dependencies/limo_pothole_detection_navigation_bringup
+[2.020s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/ament_index/resource_index/parent_prefix_path/limo_pothole_detection_navigation_bringup
+[2.021s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/environment/ament_prefix_path.sh
+[2.021s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/environment/ament_prefix_path.dsv
+[2.022s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/environment/path.sh
+[2.022s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/environment/path.dsv
+[2.022s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/local_setup.bash
+[2.022s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/local_setup.sh
+[2.023s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/local_setup.zsh
+[2.023s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/local_setup.dsv
+[2.023s] -- Symlinking: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.dsv
+[2.041s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/ament_index/resource_index/packages/limo_pothole_detection_navigation_bringup
+[2.041s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/cmake/limo_pothole_detection_navigation_bringupConfig.cmake
+[2.041s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/cmake/limo_pothole_detection_navigation_bringupConfig-version.cmake
+[2.041s] -- Up-to-date symlink: /home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.xml
+[2.046s] Invoked command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup

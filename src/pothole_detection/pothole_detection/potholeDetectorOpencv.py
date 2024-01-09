@@ -104,6 +104,7 @@ class ObjectDetector(Node):
         except CvBridgeError as e:
             print(e)
         if len(contours)!=0:
+            print(len(contours))
             nu_bbox=0
             for contour in contours:
                 nu_bbox+=1
@@ -116,7 +117,7 @@ class ObjectDetector(Node):
                      self.img_pub.publish(self.bridge.cv2_to_imgmsg(image,"bgr8"))
                      # calculate the y,x centroid
                      image_coords = (xb+w/2,yb+h/2)
-                     depth_coords = (image_depth.shape[0]/2 + (image_coords[0] - image_depth.shape[0]/2)*self.color2depth_aspect, image_depth.shape[1]/2 + (image_coords[1] - image_depth.shape[1]/2)*self.color2depth_aspect)
+                     depth_coords = (image_depth.shape[0]/2 + (image_coords[1] - image_depth.shape[0]/2)*self.color2depth_aspect, image_depth.shape[1]/2 + (image_coords[0] - image_depth.shape[1]/2)*self.color2depth_aspect)
                      # get the depth reading at the centroid location
                      depth_value = image_depth[int(depth_coords[0]), int(depth_coords[1])] # you might need to do some boundary checking first!
                      # calculate object's 3d location in camera coords
