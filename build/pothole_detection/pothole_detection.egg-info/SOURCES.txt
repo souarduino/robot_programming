@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 pothole_detection/__init__.py
+pothole_detection/clusterpothole.py
 pothole_detection/dataset_extraction.py
 pothole_detection/potholeDetectorOpencv.py
 pothole_detection/pothole_coordinate.py

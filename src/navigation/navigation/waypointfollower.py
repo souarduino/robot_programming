@@ -98,10 +98,10 @@ def main():
     goal_pose7 = PoseStamped()
     goal_pose7.header.frame_id = 'map'
     goal_pose7.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose7.pose.position.x = 0.1
-    goal_pose7.pose.position.y = 0.0
-    goal_pose7.pose.orientation.w = 1.0
-    goal_pose7.pose.orientation.z = 0.0
+    goal_pose7.pose.position.x = -0.2685
+    goal_pose7.pose.position.y = -0.12365
+    goal_pose7.pose.orientation.w = 0.89469
+    goal_pose7.pose.orientation.z = -0.4466
     goal_poses.append(goal_pose7)
 
     # sanity check a valid path exists
@@ -139,10 +139,10 @@ def main():
                 goal_pose4 = PoseStamped()
                 goal_pose4.header.frame_id = 'map'
                 goal_pose4.header.stamp = now.to_msg()
-                goal_pose4.pose.position.x = 0.1
-                goal_pose4.pose.position.y = 0.0
-                goal_pose4.pose.orientation.w = 1.0
-                goal_pose4.pose.orientation.z = 0.0
+                goal_pose7.pose.position.x = -0.2685
+                goal_pose7.pose.position.y = -0.12365
+                goal_pose7.pose.orientation.w = 0.89469
+                goal_pose7.pose.orientation.z = -0.4466
                 goal_poses = [goal_pose4]
                 nav_start = now
                 navigator.followWaypoints(goal_poses)

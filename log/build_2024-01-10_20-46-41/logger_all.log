@@ -1,0 +1,328 @@
+[4.438s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.438s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd9d5e6ecb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd9d5e6df60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd9d5e6df60>>)
+[4.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.637s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/soumo/robot_programming'
+[4.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.638s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.639s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.677s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.678s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.679s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.679s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.679s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.680s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.680s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.680s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.680s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.681s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.681s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.681s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.681s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.681s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.682s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.683s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.683s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.683s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extension 'ignore'
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extension 'ignore_ament_install'
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extensions ['colcon_pkg']
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extension 'colcon_pkg'
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extensions ['colcon_meta']
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extension 'colcon_meta'
+[4.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extensions ['ros']
+[4.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_interfaces) by extension 'ros'
+[4.692s] DEBUG:colcon.colcon_core.package_identification:Package 'src/detection_interfaces' with type 'ros.ament_cmake' and name 'detection_interfaces'
+[4.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extensions ['ignore', 'ignore_ament_install']
+[4.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extension 'ignore'
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extension 'ignore_ament_install'
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extensions ['colcon_pkg']
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extension 'colcon_pkg'
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extensions ['colcon_meta']
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extension 'colcon_meta'
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extensions ['ros']
+[4.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/limo_pothole_detection_navigation_bringup) by extension 'ros'
+[4.695s] DEBUG:colcon.colcon_core.package_identification:Package 'src/limo_pothole_detection_navigation_bringup' with type 'ros.ament_cmake' and name 'limo_pothole_detection_navigation_bringup'
+[4.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['ignore', 'ignore_ament_install']
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'ignore'
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'ignore_ament_install'
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['colcon_pkg']
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'colcon_pkg'
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['colcon_meta']
+[4.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'colcon_meta'
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['ros']
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'ros'
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['cmake', 'python']
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'cmake'
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'python'
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extensions ['python_setup_py']
+[4.697s] Level 1:colcon.colcon_core.package_identification:_identify(src/map) by extension 'python_setup_py'
+[4.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ignore', 'ignore_ament_install']
+[4.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore'
+[4.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ignore_ament_install'
+[4.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_pkg']
+[4.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_pkg'
+[4.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['colcon_meta']
+[4.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'colcon_meta'
+[4.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extensions ['ros']
+[4.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation) by extension 'ros'
+[4.701s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation' with type 'ros.ament_python' and name 'navigation'
+[4.702s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extensions ['ignore', 'ignore_ament_install']
+[4.702s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extension 'ignore'
+[4.702s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extension 'ignore_ament_install'
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extensions ['colcon_pkg']
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extension 'colcon_pkg'
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extensions ['colcon_meta']
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extension 'colcon_meta'
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extensions ['ros']
+[4.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/pothole_detection) by extension 'ros'
+[4.705s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pothole_detection' with type 'ros.ament_python' and name 'pothole_detection'
+[4.705s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.706s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.706s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.706s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.706s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.019s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_args' from command line to 'None'
+[5.019s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_target' from command line to 'None'
+[5.019s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.019s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[5.020s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[5.020s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[5.020s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[5.020s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[5.020s] Level 5:colcon.colcon_core.verb:set package 'detection_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.020s] DEBUG:colcon.colcon_core.verb:Building package 'detection_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumo/robot_programming/build/detection_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumo/robot_programming/install/detection_interfaces', 'merge_install': False, 'path': '/home/soumo/robot_programming/src/detection_interfaces', 'symlink_install': True, 'test_result_base': None}
+[5.091s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_args' from command line to 'None'
+[5.091s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_target' from command line to 'None'
+[5.091s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[5.092s] Level 5:colcon.colcon_core.verb:set package 'limo_pothole_detection_navigation_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.092s] DEBUG:colcon.colcon_core.verb:Building package 'limo_pothole_detection_navigation_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup', 'merge_install': False, 'path': '/home/soumo/robot_programming/src/limo_pothole_detection_navigation_bringup', 'symlink_install': True, 'test_result_base': None}
+[5.154s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_args' from command line to 'None'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target' from command line to 'None'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_clean_first' from command line to 'False'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'cmake_force_configure' from command line to 'False'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'ament_cmake_args' from command line to 'None'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[5.155s] Level 5:colcon.colcon_core.verb:set package 'navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.155s] DEBUG:colcon.colcon_core.verb:Building package 'navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumo/robot_programming/build/navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumo/robot_programming/install/navigation', 'merge_install': False, 'path': '/home/soumo/robot_programming/src/navigation', 'symlink_install': True, 'test_result_base': None}
+[5.212s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_args' from command line to 'None'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_target' from command line to 'None'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_clean_first' from command line to 'False'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'cmake_force_configure' from command line to 'False'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'ament_cmake_args' from command line to 'None'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[5.213s] Level 5:colcon.colcon_core.verb:set package 'pothole_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.213s] DEBUG:colcon.colcon_core.verb:Building package 'pothole_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumo/robot_programming/build/pothole_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumo/robot_programming/install/pothole_detection', 'merge_install': False, 'path': '/home/soumo/robot_programming/src/pothole_detection', 'symlink_install': True, 'test_result_base': None}
+[5.269s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.333s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumo/robot_programming/src/detection_interfaces' with build type 'ament_cmake'
+[5.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumo/robot_programming/src/detection_interfaces'
+[5.444s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.777s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumo/robot_programming/src/limo_pothole_detection_navigation_bringup' with build type 'ament_cmake'
+[5.777s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumo/robot_programming/src/limo_pothole_detection_navigation_bringup'
+[5.846s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.166s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/soumo/robot_programming/src/navigation' with build type 'ament_python'
+[6.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'ament_prefix_path')
+[6.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/navigation/share/navigation/hook/ament_prefix_path.ps1'
+[6.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/navigation/share/navigation/hook/ament_prefix_path.dsv'
+[6.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/navigation/share/navigation/hook/ament_prefix_path.sh'
+[6.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.634s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/soumo/robot_programming/src/pothole_detection' with build type 'ament_python'
+[6.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('pothole_detection', 'ament_prefix_path')
+[6.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/ament_prefix_path.ps1'
+[6.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/ament_prefix_path.dsv'
+[6.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/ament_prefix_path.sh'
+[6.774s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.774s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/detection_interfaces -- -j8 -l8
+[7.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup -- -j8 -l8
+[8.428s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/soumo/robot_programming/src/navigation'
+[8.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.116s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/soumo/robot_programming/src/pothole_detection'
+[10.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup -- -j8 -l8
+[10.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/soumo/robot_programming/build/detection_interfaces -- -j8 -l8
+[10.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup
+[11.103s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_pothole_detection_navigation_bringup)
+[11.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/limo_pothole_detection_navigation_bringup
+[11.254s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup' for CMake module files
+[11.258s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup' for CMake config files
+[11.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_pothole_detection_navigation_bringup', 'cmake_prefix_path')
+[11.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.ps1'
+[11.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.dsv'
+[11.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.sh'
+[11.372s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/bin'
+[11.373s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/lib/pkgconfig/limo_pothole_detection_navigation_bringup.pc'
+[11.374s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/lib/python3.10/site-packages'
+[11.382s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/bin'
+[11.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.ps1'
+[11.523s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.dsv'
+[11.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.sh'
+[11.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.bash'
+[11.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.zsh'
+[11.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/colcon-core/packages/limo_pothole_detection_navigation_bringup)
+[11.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/detection_interfaces
+[11.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(limo_pothole_detection_navigation_bringup)
+[11.991s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup' for CMake module files
+[12.000s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup' for CMake config files
+[12.002s] Level 1:colcon.colcon_core.shell:create_environment_hook('limo_pothole_detection_navigation_bringup', 'cmake_prefix_path')
+[12.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.ps1'
+[12.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.dsv'
+[12.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/hook/cmake_prefix_path.sh'
+[12.158s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/bin'
+[12.159s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/lib/pkgconfig/limo_pothole_detection_navigation_bringup.pc'
+[12.161s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/lib/python3.10/site-packages'
+[12.162s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/bin'
+[12.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.ps1'
+[12.362s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.dsv'
+[12.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.sh'
+[12.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.bash'
+[12.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/limo_pothole_detection_navigation_bringup/package.zsh'
+[12.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/limo_pothole_detection_navigation_bringup/share/colcon-core/packages/limo_pothole_detection_navigation_bringup)
+[12.383s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detection_interfaces)
+[12.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumo/robot_programming/install/pothole_detection:/home/soumo/robot_programming/install/navigation:/home/soumo/ros2_ws/install/pothole_detection:/home/soumo/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/soumo/robot_programming/build/detection_interfaces
+[12.470s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces' for CMake module files
+[12.473s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces' for CMake config files
+[12.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_interfaces', 'cmake_prefix_path')
+[12.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.ps1'
+[12.561s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.dsv'
+[12.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.sh'
+[12.567s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib'
+[12.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_interfaces', 'ld_library_path_lib')
+[12.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.ps1'
+[12.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.dsv'
+[12.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.sh'
+[12.648s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/bin'
+[12.649s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib/pkgconfig/detection_interfaces.pc'
+[12.650s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib/python3.10/site-packages'
+[12.650s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/bin'
+[12.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.ps1'
+[12.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.dsv'
+[12.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.sh'
+[12.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.bash'
+[12.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.zsh'
+[12.739s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/detection_interfaces/share/colcon-core/packages/detection_interfaces)
+[12.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/navigation': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data
+[12.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumo/robot_programming/build/pothole_detection': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build --no-deps install_data
+[13.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(detection_interfaces)
+[13.687s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces' for CMake module files
+[13.690s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces' for CMake config files
+[13.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_interfaces', 'cmake_prefix_path')
+[13.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.ps1'
+[13.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.dsv'
+[13.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/cmake_prefix_path.sh'
+[13.773s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib'
+[13.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('detection_interfaces', 'ld_library_path_lib')
+[13.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.ps1'
+[13.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.dsv'
+[13.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/hook/ld_library_path_lib.sh'
+[13.861s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/bin'
+[13.861s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib/pkgconfig/detection_interfaces.pc'
+[13.862s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/lib/python3.10/site-packages'
+[13.863s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/detection_interfaces/bin'
+[13.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.ps1'
+[13.956s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.dsv'
+[13.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.sh'
+[13.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.bash'
+[13.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/detection_interfaces/share/detection_interfaces/package.zsh'
+[13.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/detection_interfaces/share/colcon-core/packages/detection_interfaces)
+[15.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath_develop')
+[15.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/navigation' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data
+[15.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/build/navigation/share/navigation/hook/pythonpath_develop.ps1'
+[15.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/build/navigation/share/navigation/hook/pythonpath_develop.dsv'
+[15.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/build/navigation/share/navigation/hook/pythonpath_develop.sh'
+[15.713s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation' for CMake module files
+[15.715s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation' for CMake config files
+[15.717s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation/lib'
+[15.717s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation/bin'
+[15.717s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation/lib/pkgconfig/navigation.pc'
+[15.718s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages'
+[15.718s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation', 'pythonpath')
+[15.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/navigation/share/navigation/hook/pythonpath.ps1'
+[15.788s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/navigation/share/navigation/hook/pythonpath.dsv'
+[15.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/navigation/share/navigation/hook/pythonpath.sh'
+[15.791s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/navigation/bin'
+[15.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation)
+[15.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/navigation/share/navigation/package.ps1'
+[15.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/navigation/share/navigation/package.dsv'
+[15.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/navigation/share/navigation/package.sh'
+[15.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/navigation/share/navigation/package.bash'
+[15.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/navigation/share/navigation/package.zsh'
+[15.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/navigation/share/colcon-core/packages/navigation)
+[15.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('pothole_detection', 'pythonpath_develop')
+[15.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumo/robot_programming/build/pothole_detection' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build --no-deps install_data
+[15.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/build/pothole_detection/share/pothole_detection/hook/pythonpath_develop.ps1'
+[15.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/build/pothole_detection/share/pothole_detection/hook/pythonpath_develop.dsv'
+[15.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/build/pothole_detection/share/pothole_detection/hook/pythonpath_develop.sh'
+[16.019s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection' for CMake module files
+[16.020s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection' for CMake config files
+[16.022s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection/lib'
+[16.023s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection/bin'
+[16.023s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection/lib/pkgconfig/pothole_detection.pc'
+[16.025s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages'
+[16.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('pothole_detection', 'pythonpath')
+[16.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/pythonpath.ps1'
+[16.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/pythonpath.dsv'
+[16.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/hook/pythonpath.sh'
+[16.092s] Level 1:colcon.colcon_core.environment:checking '/home/soumo/robot_programming/install/pothole_detection/bin'
+[16.092s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pothole_detection)
+[16.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/package.ps1'
+[16.158s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/package.dsv'
+[16.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/package.sh'
+[16.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/package.bash'
+[16.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumo/robot_programming/install/pothole_detection/share/pothole_detection/package.zsh'
+[16.166s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumo/robot_programming/install/pothole_detection/share/colcon-core/packages/pothole_detection)
+[16.167s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.169s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.170s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.170s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.270s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.271s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.318s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.394s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumo/robot_programming/install/local_setup.ps1'
+[16.398s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/soumo/robot_programming/install/_local_setup_util_ps1.py'
+[16.403s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumo/robot_programming/install/setup.ps1'
+[16.477s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumo/robot_programming/install/local_setup.sh'
+[16.480s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/soumo/robot_programming/install/_local_setup_util_sh.py'
+[16.481s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumo/robot_programming/install/setup.sh'
+[16.556s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumo/robot_programming/install/local_setup.bash'
+[16.558s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumo/robot_programming/install/setup.bash'
+[16.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumo/robot_programming/install/local_setup.zsh'
+[16.634s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumo/robot_programming/install/setup.zsh'

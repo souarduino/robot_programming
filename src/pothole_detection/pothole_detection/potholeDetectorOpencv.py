@@ -71,7 +71,7 @@ class ObjectDetector(Node):
             return transform
         except Exception as e:
             self.get_logger().warning(f"Failed to lookup transform: {str(e)}")
-            return None
+            raise ValueError (e)
 
     def camera_info_callback(self, data):
         if not self.camera_model:
@@ -109,6 +109,7 @@ class ObjectDetector(Node):
             for contour in contours:
                 nu_bbox+=1
                 if cv2.contourArea(contour)>500:
+                     M=cv2.moments(contour)
                      xb,yb,w,h=cv2.boundingRect(contour)
                      coordinates = (xb,yb-10)
                      text="pothole"+str(nu_bbox)
@@ -116,8 +117,8 @@ class ObjectDetector(Node):
                      image=cv2.rectangle(image_color,(xb,yb),(xb+w,yb+h),(0,0,255),5)
                      self.img_pub.publish(self.bridge.cv2_to_imgmsg(image,"bgr8"))
                      # calculate the y,x centroid
-                     image_coords = (xb+w/2,yb+h/2)
-                     depth_coords = (image_depth.shape[0]/2 + (image_coords[1] - image_depth.shape[0]/2)*self.color2depth_aspect, image_depth.shape[1]/2 + (image_coords[0] - image_depth.shape[1]/2)*self.color2depth_aspect)
+                     image_coords = (M["m01"] / M["m00"], M["m10"] / M["m00"])
+                     depth_coords = (image_depth.shape[0]/2 + (image_coords[0] - image_color.shape[0]/2)*self.color2depth_aspect, image_depth.shape[1]/2 + (image_coords[1] - image_color.shape[1]/2)*self.color2depth_aspect)
                      # get the depth reading at the centroid location
                      depth_value = image_depth[int(depth_coords[0]), int(depth_coords[1])] # you might need to do some boundary checking first!
                      # calculate object's 3d location in camera coords
@@ -139,7 +140,10 @@ class ObjectDetector(Node):
                      #self.object_location_pub.publish(object_location)        
 
                      # print out the coordinates in the odom frame
-                     transform = self.get_tf_transform('odom','depth_link')
+                     try:
+                         transform = self.get_tf_transform('odom','depth_link')
+                     except Exception as e:
+                         return e
                      p_camera = do_transform_pose(object_location.pose, transform)
                      # TODO use p_camera to build new Pose object and append to array_poses for pothole location in world frame
                      pothole_array_pose.poses.append(p_camera)
@@ -153,22 +157,6 @@ class ObjectDetector(Node):
             print("no pothole detected in the frame")
             self.img_pub.publish(self.bridge.cv2_to_imgmsg(image_color,"bgr8"))
             return
-
-        # print('odom coords: ', p_camera.position)
-
-        # if self.visualisation:
-        #     # draw circles
-        #     cv2.circle(image_color, (int(image_coords[1]), int(image_coords[0])), 10, 255, -1)
-        #     cv2.circle(image_depth, (int(depth_coords[1]), int(depth_coords[0])), 5, 255, -1)
-
-        #     #resize and adjust for visualisation
-        #     image_color = cv2.resize(image_color, (0,0), fx=0.5, fy=0.5)
-        #     image_depth *= 1.0/10.0 # scale for visualisation (max range 10.0 m)
-
-        #     cv2.imshow("image depth", image_depth)
-        #     cv2.imshow("image color", image_color)
-        #     cv2.waitKey(1)
-
 def main(args=None):
     rclpy.init(args=args)
     image_projection = ObjectDetector()

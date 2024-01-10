@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing pothole_detection.egg-info/PKG-INFO
+writing dependency_links to pothole_detection.egg-info/dependency_links.txt
+writing entry points to pothole_detection.egg-info/entry_points.txt
+writing requirements to pothole_detection.egg-info/requires.txt
+writing top-level names to pothole_detection.egg-info/top_level.txt
+reading manifest file 'pothole_detection.egg-info/SOURCES.txt'
+writing manifest file 'pothole_detection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)
+Installing dataset_extraction script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+Installing pothole_cluster script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+Installing pothole_detection_opencv script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+Installing pothole_detection_yolo script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+Installing pothole_location1 script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+
+Installed /home/soumo/robot_programming/build/pothole_detection
+running install_data

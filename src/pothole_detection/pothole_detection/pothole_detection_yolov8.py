@@ -14,8 +14,8 @@ class potholeDectection(Node):
             '/limo/depth_camera_link/image_raw',
             self.image_callback, 10)
         self.subscription
-        self.img_pub = self.create_publisher(Image, "/image_result", 1)
-        self.inference_pub=self.create_publisher(InferenceResultArray,"/inference_result",1)
+        self.img_pub = self.create_publisher(Image, "/image_result", 10)
+        self.inference_pub=self.create_publisher(InferenceResultArray,"/inference_result",10)
     def image_callback(self, msg):
             try:
                 img=bridge.imgmsg_to_cv2(msg,"bgr8")

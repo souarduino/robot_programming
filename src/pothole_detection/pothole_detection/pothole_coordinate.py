@@ -16,7 +16,6 @@ from geometry_msgs.msg import PoseStamped, PoseArray
 from cv_bridge import CvBridge, CvBridgeError
 from tf2_geometry_msgs import do_transform_pose
 from detection_interfaces.msg import InferenceResultArray
-import threading
 
 class potholePose(Node):
     camera_model = None
@@ -93,7 +92,11 @@ class potholePose(Node):
             #self.object_location_pub.publish(object_location)        
 
             # print out the coordinates in the odom frame
-            transform = self.get_tf_transform('odom','depth_link')
+            try:
+                transform = self.get_tf_transform('odom','depth_link')
+            except Exception as e:
+                self.get_logger().warning("failed to get transform:{e}")
+                raise ValueError (e)
             p_camera = do_transform_pose(object_location.pose, transform)
             # TODO use p_camera to build new Pose object and append to array_poses for pothole location in world frame
             pothole_array_pose.poses.append(p_camera)
