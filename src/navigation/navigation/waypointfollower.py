@@ -23,7 +23,7 @@ from reportlab.lib.units import inch
 class saveMaker(Node):
     def __init__(self):
         self.state = False
-        super().__init__("waypoint_navigation_node")
+        super().__init__("maker_saver_node")
         self.markers = None
 
         self.pothole_marker_sub = self.create_subscription(
@@ -69,13 +69,6 @@ class saveMaker(Node):
         title_text = "Pothole Location Summary"
         title = Paragraph(title_text, title_style)
         elements.append(title)
-
-        paragraph_style = getSampleStyleSheet()["BodyText"]
-        paragraph_text_1 = f"""
-            This summary was produced at {datetime_title}. A total of {count} potholes were detected on this run of the pothole detection. The table below lists the positions and sizes for these potholes.
-        """
-        paragraph_1 = Paragraph(paragraph_text_1, paragraph_style)
-        elements.append(paragraph_1)
         elements.append(Spacer(1, 0.1 * inch))
 
         table = Table(data, colWidths=[table_width / len(data[0])] * len(data[0]))
@@ -92,11 +85,6 @@ class saveMaker(Node):
 
         table.setStyle(style)
         elements.append(table)
-        paragraph_text_2 = """
-        The plot below visually overlaps the positions of the detected potholes as well as their sizes onto the world map.
-        """
-        paragraph_2 = Paragraph(paragraph_text_2, paragraph_style)
-        elements.append(paragraph_2)
         document.build(elements)
         
 def main():
