@@ -1,7 +1,7 @@
 # Abstract
 An important risk to road safety are potholes which is why efforts have been made to autonomously detect them. In this repository, I am attempting to solve this provlem by implementing algorithms for automatic pothole detection and robot navigation using two methods. My solutions make use of  OpenCV and yoloV8, along side a depth sensing camera, to determine a pothole's location in relation to a world frame. With a series of waypoints as a guide, the robot moves around the map and locates the potholes and the  run concludes with the creation of a summary report.
 # Instructions for executing the code
-# Prerequisites
+### Prerequisites
 This works under the assumption that ros2 humble version is installed. Additionally, this has only been set up and tested in Ros2-humble native environments.
 If you don't have the limo_robot repository on your device, you can clone it and build it by following the instructions provided here. I also ssume that you know how to start the simulated world and the navigation stack. am map has been generated for the navigation stack and is located in ```robot_programming/src/map```
 
@@ -31,5 +31,5 @@ The navigation can be started afterware by running
 ros2 run navigation Nav_through_waypoint
 ```
 A video demostrating how the result of this detection method using yolo has been uploaded on youtube: https://youtu.be/02gSRXX2Xg4
-### 3) Report
-A summary repport is created after the run is concluded condaining the number of pothole detected and their locations.
+### Report
+A summary report is created after the run is concluded condaining the number of pothole detected and their locations.
