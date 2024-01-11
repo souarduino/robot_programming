@@ -3,7 +3,8 @@ An important risk to road safety are potholes which is why efforts have been mad
 # Instructions for executing the code
 # Prerequisites
 This works under the assumption that ros2 humble version is installed. Additionally, this has only been set up and tested in Ros2-humble native environments.
-If you don't have the limo_robot repository on your device, you can clone it and build it by following the instructions provided here.
+If you don't have the limo_robot repository on your device, you can clone it and build it by following the instructions provided here. I also ssume that you know how to start the simulated world and the navigation stack. am map has been generated for the navigation stack and is located in ```robot_programming/src/map```
+
 ```
 https://github.com/LCAS/limo_ros2/tree/humble
 ```
@@ -30,3 +31,5 @@ The navigation can be started afterware by running
 ros2 run navigation Nav_through_waypoint
 ```
 A video demostrating how the result of this detection method using yolo has been uploaded on youtube: https://youtu.be/02gSRXX2Xg4
+### 3) Report
+A summary repport is created after the run is concluded condaining the number of pothole detected and their locations.
