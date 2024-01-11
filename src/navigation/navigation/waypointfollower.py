@@ -5,18 +5,103 @@ import rclpy
 from rclpy.duration import Duration
 from rclpy.node import Node 
 from visualization_msgs.msg import MarkerArray
+from rclpy import qos
+from datetime import datetime
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Table,
+    TableStyle,
+    Paragraph,
+    Spacer,
+)
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch
 
-"""
-Basic navigation demo to go to poses.
-"""
 # class saveMaker(Node):
-#     def __init__(self):
-#         super().__init__('pothole_clustering')
-#         self.image_sub = self.create_subscription(MarkerArray, '/visualization_marker', 
-#                                                   self.save_data_callback, qos_profile=qos.qos_profile_sensor_data)
+class saveMaker(Node):
+    def __init__(self):
+        self.state = False
+        super().__init__("waypoint_navigation_node")
+        self.markers = None
+
+        self.pothole_marker_sub = self.create_subscription(
+            MarkerArray,
+            "/visualization_marker",
+            self.marker_saver_callback,
+            qos_profile=qos.qos_profile_sensor_data,
+        )
+
+    def marker_saver_callback(self, data):
+        self.markers = data.markers
+        if self.state:
+            report_data = [["Pothole detected", "Position x", "Position y"]]
+            for idx, marker in enumerate(self.markers):
+                self.get_logger().info(f"id: {marker.id}")
+                self.get_logger().info(f"x: {marker.pose.position.x}")
+                self.get_logger().info(f"y: {marker.pose.position.y}")
+                report_data.append(
+                    [
+                        idx,
+                        round(marker.pose.position.x, 3),
+                        round(marker.pose.position.y, 3)
+                    ]
+                )
+            self.generate_report(report_data)
+            self.destroy_node()
+            rclpy.shutdown()
+    def generate_report(self, data):
+        print("generating report")
+        now = datetime.now()
+        datetime_file = now.strftime("%Y-%m-%d_%H-%M-%S")
+        datetime_title = now.strftime("%d/%m/%Y %H:%M:%S")
+        count = len(data) - 1
+
+        filename = f"report/pothole_report_{datetime_file}.pdf"
+        document = SimpleDocTemplate(filename, pagesize=letter)
+
+        page_width, page_height = letter
+        table_width = page_width - 2 * 72
+        elements = []
+
+        title_style = getSampleStyleSheet()["Title"]
+        title_text = "Pothole Location Summary"
+        title = Paragraph(title_text, title_style)
+        elements.append(title)
+
+        paragraph_style = getSampleStyleSheet()["BodyText"]
+        paragraph_text_1 = f"""
+            This summary was produced at {datetime_title}. A total of {count} potholes were detected on this run of the pothole detection. The table below lists the positions and sizes for these potholes.
+        """
+        paragraph_1 = Paragraph(paragraph_text_1, paragraph_style)
+        elements.append(paragraph_1)
+        elements.append(Spacer(1, 0.1 * inch))
+
+        table = Table(data, colWidths=[table_width / len(data[0])] * len(data[0]))
+        style = TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, 0), colors.grey),
+                ("TEXTCOLOR", (0, 0), (-1, 0), colors.whitesmoke),
+                ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("BOTTOMPADDING", (0, 0), (-1, 0), 4),
+                ("BACKGROUND", (0, 1), (-1, -1), colors.beige),
+            ]
+        )
+
+        table.setStyle(style)
+        elements.append(table)
+        paragraph_text_2 = """
+        The plot below visually overlaps the positions of the detected potholes as well as their sizes onto the world map.
+        """
+        paragraph_2 = Paragraph(paragraph_text_2, paragraph_style)
+        elements.append(paragraph_2)
+        document.build(elements)
         
 def main():
     rclpy.init()
+    report=saveMaker()
 
     navigator = BasicNavigator()
 
@@ -29,24 +114,7 @@ def main():
     initial_pose.pose.orientation.z = 0.0
     initial_pose.pose.orientation.w = 1.0
     navigator.setInitialPose(initial_pose)
-
-    # Activate navigation, if not autostarted. This should be called after setInitialPose()
-    # or this will initialize at the origin of the map and update the costmap with bogus readings.
-    # If autostart, you should `waitUntilNav2Active()` instead.
-    # navigator.lifecycleStartup()
-
-    # Wait for navigation to fully activate, since autostarting nav2
     navigator.waitUntilNav2Active()
-
-    # If desired, you can change or load the map as well
-    # navigator.changeMap('/path/to/map.yaml')
-
-    # You may use the navigator to clear or obtain costmaps
-    # navigator.clearAllCostmaps()  # also have clearLocalCostmap() and clearGlobalCostmap()
-    # global_costmap = navigator.getGlobalCostmap()
-    # local_costmap = navigator.getLocalCostmap()
-
-    # set our demo's goal poses to follow
     goal_poses = []
     goal_pose1 = PoseStamped()
     goal_pose1.header.frame_id = 'map'
@@ -156,6 +224,8 @@ def main():
     # Do something depending on the return code
     result = navigator.getResult()
     if result == TaskResult.SUCCEEDED:
+        report.state=True
+        rclpy.spin(report)
         print('Goal succeeded!')
     elif result == TaskResult.CANCELED:
         print('Goal was canceled!')
