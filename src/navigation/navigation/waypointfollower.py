@@ -3,12 +3,18 @@ from geometry_msgs.msg import PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 import rclpy
 from rclpy.duration import Duration
+from rclpy.node import Node 
+from visualization_msgs.msg import MarkerArray
 
 """
 Basic navigation demo to go to poses.
 """
-
-
+# class saveMaker(Node):
+#     def __init__(self):
+#         super().__init__('pothole_clustering')
+#         self.image_sub = self.create_subscription(MarkerArray, '/visualization_marker', 
+#                                                   self.save_data_callback, qos_profile=qos.qos_profile_sensor_data)
+        
 def main():
     rclpy.init()
 

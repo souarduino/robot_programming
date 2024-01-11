@@ -28,7 +28,7 @@ class clusterPothole(Node):
                     a=findDistance((pose.position.x,pose.position.y),pose1)
                     # if distance is > a value add pose to self.pothole_list (new pothole)
                     # find the closest pothole by sorting
-                    if a<0.11:
+                    if a<0.15:
                         s = 0
                         break
                 if s == 1:
