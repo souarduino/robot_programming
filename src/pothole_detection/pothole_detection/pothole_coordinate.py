@@ -38,7 +38,8 @@ class potholePose(Node):
                                                   self.pothole_callback, qos_profile=qos.qos_profile_sensor_data)
         self.object_location_pub = self.create_publisher(PoseArray, '/limo/object_location_array', 10)
         self.pothole_location_pub = self.create_publisher(PoseArray, '/limo/pothole_location_array', 10)
-         
+        self.image_sub = self.create_subscription(Image, '/limo/depth_camera_link/image_raw', 
+                                                  self.image_color_callback, qos_profile=qos.qos_profile_sensor_data)
         self.image_sub = self.create_subscription(Image, '/limo/depth_camera_link/depth/image_raw', 
                                                   self.image_depth_callback, qos_profile=qos.qos_profile_sensor_data)
         
@@ -52,24 +53,30 @@ class potholePose(Node):
         array_pose.header.frame_id = "depth_link"
         pothole_array_pose.header.frame_id="odom"
          # calculate the y,x centroid
+        # if self.image_color_ros is None:
+        #     return
+        
         if self.camera_model is None:
             return
 
         if self.image_depth_ros is None:
             return
+        
         print("Exit Callback Checks")
         # covert images to open_cv
         try:
             image_depth = self.bridge.imgmsg_to_cv2(self.image_depth_ros, "32FC1")
+            image_color = self.bridge.imgmsg_to_cv2(self.image_color_ros, "bgr8")
         except CvBridgeError as e:
             print(e)
             return
         for data in data_array.results:
             print(data)
-
             self.image_coords = (data.left + (data.right-data.left)/2,data.top + (data.bottom-data.top)/2)
-            depth_coords = (image_depth.shape[0]/2 + (self.image_coords[0] - image_depth.shape[0]/2)*self.color2depth_aspect, 
-            image_depth.shape[1]/2 + (self.image_coords[1] - image_depth.shape[1]/2)*self.color2depth_aspect)
+            # depth_coords = (image_depth.shape[0]/2 + (self.image_coords[0] - image_depth.shape[0]/2)*self.color2depth_aspect, 
+            # image_depth.shape[1]/2 + (self.image_coords[1] - image_depth.shape[1]/2)*self.color2depth_aspect)
+            depth_coords = (image_depth.shape[0]/2 + (self.image_coords[0] - image_color.shape[0]/2)*self.color2depth_aspect, 
+            image_depth.shape[1]/2 + (self.image_coords[1] - image_color.shape[1]/2)*self.color2depth_aspect)
             # get the depth reading at the centroid location
             depth_value = image_depth[int(depth_coords[0]), int(depth_coords[1])] # you might need to do some boundary checking first!
 
@@ -111,7 +118,7 @@ class potholePose(Node):
             return transform
         except Exception as e:
             self.get_logger().warning(f"Failed to lookup transform: {str(e)}")
-            return None
+            return e
 
     def camera_info_callback(self, data):
         print("Got camera info")
@@ -122,6 +129,10 @@ class potholePose(Node):
     def image_depth_callback(self, data):
         print("Got depth")
         self.image_depth_ros = data
+
+    def image_color_callback(self, data):
+        print("Got image color")
+        self.image_color_ros=data
 
 def main(args=None):
     rclpy.init(args=args)

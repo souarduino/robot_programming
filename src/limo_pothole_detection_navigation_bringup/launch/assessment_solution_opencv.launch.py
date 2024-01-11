@@ -1,6 +1,5 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from time import sleep
 
 def generate_launch_description():
     pothole_detection_yolo=Node(
@@ -9,9 +8,8 @@ def generate_launch_description():
     )
     pothole_location=Node(
         package="pothole_detection",
-        executable="pothole_cluster"
+        executable="pothole_cluster_opencv"
     )
-    sleep(5)
     ld=LaunchDescription()
     navigation=Node(
         package="navigation",

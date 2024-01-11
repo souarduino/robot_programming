@@ -9,7 +9,7 @@ bridge =CvBridge()
 class potholeDectection(Node):
     def __init__(self):
         super().__init__('subscribe_to_camera')
-        self.model=YOLO("/home/soumo/ros_ws/src/pothole_detetion/pothole_detetion/yolov8s_50_epoch.pt")
+        self.model=YOLO("/home/soumo/robot_programming/src/pothole_detection/pothole_detection/yolov8n_50_epoch_best.pt")
         self.subscription = self.create_subscription(Image,
             '/limo/depth_camera_link/image_raw',
             self.image_callback, 10)

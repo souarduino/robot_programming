@@ -22,8 +22,9 @@ setup(
         'console_scripts': [
             "dataset_extraction=pothole_detection.dataset_extraction:main",
             "pothole_detection_yolo=pothole_detection.pothole_detection_yolov8:main",
-            "pothole_cluster=pothole_detection.clusterpothole:main",
-            "pothole_location1=pothole_detection.pothole_coordinate:main",
+            "pothole_location=pothole_detection.pothole_coordinate:main",
+            "pothole_cluster_opencv=pothole_detection.clusterpothole_opencv:main",
+            "pothole_cluster_yolo=pothole_detection.clusterpothole_yolo:main",
             "pothole_detection_opencv=pothole_detection.potholeDetectorOpencv:main"
             
         ],

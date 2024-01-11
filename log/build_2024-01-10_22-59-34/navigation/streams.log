@@ -1,0 +1,17 @@
+[6.187s] Invoking command in '/home/soumo/robot_programming/build/navigation': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data
+[7.515s] running develop
+[8.428s] running egg_info
+[8.428s] writing navigation.egg-info/PKG-INFO
+[8.433s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[8.433s] writing entry points to navigation.egg-info/entry_points.txt
+[8.433s] writing requirements to navigation.egg-info/requires.txt
+[8.434s] writing top-level names to navigation.egg-info/top_level.txt
+[8.444s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[8.444s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[8.628s] running build_ext
+[8.628s] Creating /home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[8.634s] Installing Nav_through_waypoint script to /home/soumo/robot_programming/install/navigation/lib/navigation
+[8.635s] 
+[8.635s] Installed /home/soumo/robot_programming/build/navigation
+[8.635s] running install_data
+[8.803s] Invoked command in '/home/soumo/robot_programming/build/navigation' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/navigation/prefix_override:/home/soumo/robot_programming/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/soumo/robot_programming/build/navigation/build --no-deps install_data

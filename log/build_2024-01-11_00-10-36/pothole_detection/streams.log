@@ -1,0 +1,54 @@
+[2.559s] Invoking command in '/home/soumo/robot_programming/build/pothole_detection': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build
+[3.362s] running develop
+[3.845s] Removing /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole-detection.egg-link (link to .)
+[3.940s] Invoked command in '/home/soumo/robot_programming/build/pothole_detection' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/soumo/robot_programming/build/pothole_detection/build
+[3.944s] Invoking command in '/home/soumo/robot_programming/src/pothole_detection': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pothole_detection build --build-base /home/soumo/robot_programming/build/pothole_detection/build install --record /home/soumo/robot_programming/build/pothole_detection/install.log --single-version-externally-managed
+[4.597s] running egg_info
+[4.598s] writing ../../build/pothole_detection/pothole_detection.egg-info/PKG-INFO
+[4.600s] writing dependency_links to ../../build/pothole_detection/pothole_detection.egg-info/dependency_links.txt
+[4.600s] writing entry points to ../../build/pothole_detection/pothole_detection.egg-info/entry_points.txt
+[4.601s] writing requirements to ../../build/pothole_detection/pothole_detection.egg-info/requires.txt
+[4.601s] writing top-level names to ../../build/pothole_detection/pothole_detection.egg-info/top_level.txt
+[4.604s] reading manifest file '../../build/pothole_detection/pothole_detection.egg-info/SOURCES.txt'
+[4.607s] writing manifest file '../../build/pothole_detection/pothole_detection.egg-info/SOURCES.txt'
+[4.608s] running build
+[4.609s] running build_py
+[4.609s] creating /home/soumo/robot_programming/build/pothole_detection/build
+[4.609s] creating /home/soumo/robot_programming/build/pothole_detection/build/lib
+[4.609s] creating /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.609s] copying pothole_detection/pothole_detection_yolov8.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.610s] copying pothole_detection/pothole_coordinate.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.610s] copying pothole_detection/dataset_extraction.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.610s] copying pothole_detection/clusterpothole_opencv.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.610s] copying pothole_detection/clusterpothole_yolo.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.610s] copying pothole_detection/potholeDetectorOpencv.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.611s] copying pothole_detection/__init__.py -> /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection
+[4.612s] running install
+[4.612s] running install_lib
+[4.612s] creating /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.612s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/pothole_detection_yolov8.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.612s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/pothole_coordinate.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.613s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/dataset_extraction.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.613s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/clusterpothole_opencv.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.613s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/clusterpothole_yolo.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.613s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/potholeDetectorOpencv.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.613s] copying /home/soumo/robot_programming/build/pothole_detection/build/lib/pothole_detection/__init__.py -> /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection
+[4.615s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/pothole_detection_yolov8.py to pothole_detection_yolov8.cpython-310.pyc
+[4.616s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/pothole_coordinate.py to pothole_coordinate.cpython-310.pyc
+[4.618s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/dataset_extraction.py to dataset_extraction.cpython-310.pyc
+[4.619s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/clusterpothole_opencv.py to clusterpothole_opencv.cpython-310.pyc
+[4.621s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/clusterpothole_yolo.py to clusterpothole_yolo.cpython-310.pyc
+[4.622s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/potholeDetectorOpencv.py to potholeDetectorOpencv.cpython-310.pyc
+[4.626s] byte-compiling /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection/__init__.py to __init__.cpython-310.pyc
+[4.626s] running install_data
+[4.627s] running install_egg_info
+[4.630s] Copying ../../build/pothole_detection/pothole_detection.egg-info to /home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages/pothole_detection-0.0.0-py3.10.egg-info
+[4.633s] running install_scripts
+[4.674s] Installing dataset_extraction script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.674s] Installing pothole_cluster_opencv script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.675s] Installing pothole_cluster_yolo script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.675s] Installing pothole_detection_opencv script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.676s] Installing pothole_detection_yolo script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.676s] Installing pothole_location script to /home/soumo/robot_programming/install/pothole_detection/lib/pothole_detection
+[4.677s] writing list of installed files to '/home/soumo/robot_programming/build/pothole_detection/install.log'
+[4.768s] Invoked command in '/home/soumo/robot_programming/src/pothole_detection' returned '0': PYTHONPATH=/home/soumo/robot_programming/build/pothole_detection/prefix_override:/home/soumo/robot_programming/install/pothole_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pothole_detection build --build-base /home/soumo/robot_programming/build/pothole_detection/build install --record /home/soumo/robot_programming/build/pothole_detection/install.log --single-version-externally-managed
